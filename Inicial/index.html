@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WD LAVAGEM</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ==========================
+                    CABEÇALHO MOBILE
+          ==========================-->
+          
+     <div id="menu-mobile" >
+      <img src="wd-lavagem-transparente.png" alt="LogoWD" width="150px"
+        />
+     <nav > <a href="#quem-somos">- QUEM SOMOS? </a>
+      <br>
+        <a href="#serviços">-SERVIÇOS</a>
+        <a href="#inicio"
+          ></a>
+        <a href="https://www.instagram.com/wdlesteticaautomotiva/">
+          <div class="icn-cbc">
+            <img
+          
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACgUlEQVR4AeyWSVLkMBBF7b5Iw0G6Gw7SwXARipMUcBFgzZY9cJLiPVtpSpZcchBEsKFC3xpy+MpUWuVf3Tf9fogXE7/b7Y7ASQuLDmaCg6mGZAPuwQ67F3DfArovCRt0F1uVGEMjk+gKyxPwmvBA38IROuIKP27CMUt5qxKjsgUaSHLa9/1xP8LxQWB3nKCtPswSS3kriNnlRAqZJDrIrQ7P/iD+Cy6AttaGPpl+tIIYkaml6zS0Xw02/R/lO3AL9HNNb3NsP6FGbHo6ovVcJ8UY4NwIoui2zB0PNuj0IJrjqg8VMmKchANTpDwDcit1v+jOUbAArfwNmzVaM3XJ+jNziYWbzaLOiFEOYoZ5S6SSKDCFEogbFrSziiW/gXALnli3SWyfYU6cCWMC6eA4zS24IJBE8tMkO0M3iyytF90qYqxMKV0nUXEMROdaRP6lxL+78fc4dtWnlazgn48W1kZsqvVVPS8FYI0OamNbSxyRno1m1WdE+laVzhbXEnt+mp5TPHHezgew5rnGuuc9rB96rCKmeEyx1asvLw0xbAJS3+24j6/RnRPHEWg7YU4swSScDXTo++uy0Xn/iundhtRNKK8h8z0nDoNilzh9BTr238foTX9sxn8vZWG/3w++sF0mTkKdFVdceFIH+D5f0MdlkjkNXY7BzDgt5LWIo4IjhRp+FvEWGEzmo0ZsCt2hXyFe/lZsZtSaEKkZs+C09Yg8msysICZ9knr32msouZ8wwnEL8X2mrT4KUndQELu4R24VmyYLROisBV1I6Ktl0WnvWoYqsRqSA/+FjN5Ktm8CG5uES1Wu+26ReJCmB548pwf6JpJJs1tF3PTyCYVvI34HAAD//xRzOZ8AAAAGSURBVAMAn3pITE3tv6wAAAAASUVORK5CYII="
+            />
+                    </a>
+                    <a
+            href="https://wa.me/351910373166?
+                    text=ola!%20Tudo%20Bem?"
+            target="_blank"
+                    >
+            <img
+            
+          
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACvElEQVR4AeyW4VHkMAyFs9fIQSUHlQCVsFQCVwlcJdDJ3vdpLZ+dONncDDP8YceKbflJT5LtZH9MX/T7Jt5d+NPpdIXcIFe7jRrg7lJLgByRV+SEj3fkFXlnrjzT3zPf1XYR4/CIN4ke6W+QjyJv9DazllRyg3CuflU2iSG0nEko2ROebg+Hw/XhLI4P6K6RB0SMpFbFYFGN2yoxpGYmqY7eCtGRPrOsHtF9IC8obhGD0+YRH6vkq8Q4sKx00xNOdeh4U8AZgGSJv4PcBBZ2Q2LAGmtgpo7DEL26GG89CMCqZObPI+yCuDjPbN23sENv2d27XeQYWfrYc2w9eKj+tQUxS+4P3fRA5BpOxTD1GZSYVSm2GfjdHDgi/lVAlqsMp9Q5/5+XRgSOUQbN8NxGxFHKEvEZNU1/ckDvvqdDpuut+BDrtezIR8QCBLce2+zbIFrM2jh96bdiOmL2sltMVIm87he4qEquX+iTOPuAd8SFIBbmD9Y8pfWKtOSOkfu5TZlHkNivExegZXVPwqDospuT+26W0I+FY9/T9d4XI6uozzI9d13GZ1U9SIsrYNSIjjNzSdsXhCQ/i5+8hk67bFWMiM3KtVHG6qdC7ochsaHnIcFv+mx551tdrC2IcaqxpbHcZhTA+UMc4oEzAN/Nfqn8amlrtpbfCryAC13rY0FcFjVwuDBQ2QpO/TB4tyuWg2a1FNcMrjWJ8YK4GElspGZv9M7DYOuBrVUyU0XokNSFBTHKSoKj+KuDztOqOK/r6KOBk9BD54ckMmXB0tcqMO/aiDhPs/vr4UhHEjo3AMUvlZL/v1zTud/vutcqRjIiTiKj9droxAOkOFdvEOIUt0Oda2LNfMTV6TpiS8aqJdKBvX91dOwV8qA4Vx//szhYtgUWHxdbR4wXnRv9RUOxF0EbgI54A/fpS19G/BcAAP//6C70NgAAAAZJREFUAwDHpzFMOPj8PQAAAABJRU5ErkJggg=="
+            />
+          </div>
+        </a>
+        <a href="/Marcação/index.html"
+          ><button class="marcar">AGENDAR SERVIÇO</button></a
+        >
+      </nav>
+   </div>
+        <!-- ==========================
+                    CABEÇALHO PC
+          ==========================-->
+    <div id="cabecalho">
+      <a href="#quem-somos">QUEM SOMOS? </a>
+      <a href="#serviços">SERVIÇOS</a>
+
+      <a href="#inicio"
+        ><img src="wd-lavagem-transparente.png" alt="LogoWD" width="150px"
+      /></a>
+      <a href="https://www.instagram.com/wdlesteticaautomotiva/">
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACgUlEQVR4AeyWSVLkMBBF7b5Iw0G6Gw7SwXARipMUcBFgzZY9cJLiPVtpSpZcchBEsKFC3xpy+MpUWuVf3Tf9fogXE7/b7Y7ASQuLDmaCg6mGZAPuwQ67F3DfArovCRt0F1uVGEMjk+gKyxPwmvBA38IROuIKP27CMUt5qxKjsgUaSHLa9/1xP8LxQWB3nKCtPswSS3kriNnlRAqZJDrIrQ7P/iD+Cy6AttaGPpl+tIIYkaml6zS0Xw02/R/lO3AL9HNNb3NsP6FGbHo6ovVcJ8UY4NwIoui2zB0PNuj0IJrjqg8VMmKchANTpDwDcit1v+jOUbAArfwNmzVaM3XJ+jNziYWbzaLOiFEOYoZ5S6SSKDCFEogbFrSziiW/gXALnli3SWyfYU6cCWMC6eA4zS24IJBE8tMkO0M3iyytF90qYqxMKV0nUXEMROdaRP6lxL+78fc4dtWnlazgn48W1kZsqvVVPS8FYI0OamNbSxyRno1m1WdE+laVzhbXEnt+mp5TPHHezgew5rnGuuc9rB96rCKmeEyx1asvLw0xbAJS3+24j6/RnRPHEWg7YU4swSScDXTo++uy0Xn/iundhtRNKK8h8z0nDoNilzh9BTr238foTX9sxn8vZWG/3w++sF0mTkKdFVdceFIH+D5f0MdlkjkNXY7BzDgt5LWIo4IjhRp+FvEWGEzmo0ZsCt2hXyFe/lZsZtSaEKkZs+C09Yg8msysICZ9knr32msouZ8wwnEL8X2mrT4KUndQELu4R24VmyYLROisBV1I6Ktl0WnvWoYqsRqSA/+FjN5Ktm8CG5uES1Wu+26ReJCmB548pwf6JpJJs1tF3PTyCYVvI34HAAD//xRzOZ8AAAAGSURBVAMAn3pITE3tv6wAAAAASUVORK5CYII="
+        />
+      </a>
+
+      <a
+        href="https://wa.me/351910373166?
+      text=ola!%20Tudo%20Bem?"
+        target="_blank"
+      >
+        <img
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACvElEQVR4AeyW4VHkMAyFs9fIQSUHlQCVsFQCVwlcJdDJ3vdpLZ+dONncDDP8YceKbflJT5LtZH9MX/T7Jt5d+NPpdIXcIFe7jRrg7lJLgByRV+SEj3fkFXlnrjzT3zPf1XYR4/CIN4ke6W+QjyJv9DazllRyg3CuflU2iSG0nEko2ROebg+Hw/XhLI4P6K6RB0SMpFbFYFGN2yoxpGYmqY7eCtGRPrOsHtF9IC8obhGD0+YRH6vkq8Q4sKx00xNOdeh4U8AZgGSJv4PcBBZ2Q2LAGmtgpo7DEL26GG89CMCqZObPI+yCuDjPbN23sENv2d27XeQYWfrYc2w9eKj+tQUxS+4P3fRA5BpOxTD1GZSYVSm2GfjdHDgi/lVAlqsMp9Q5/5+XRgSOUQbN8NxGxFHKEvEZNU1/ckDvvqdDpuut+BDrtezIR8QCBLce2+zbIFrM2jh96bdiOmL2sltMVIm87he4qEquX+iTOPuAd8SFIBbmD9Y8pfWKtOSOkfu5TZlHkNivExegZXVPwqDospuT+26W0I+FY9/T9d4XI6uozzI9d13GZ1U9SIsrYNSIjjNzSdsXhCQ/i5+8hk67bFWMiM3KtVHG6qdC7ochsaHnIcFv+mx551tdrC2IcaqxpbHcZhTA+UMc4oEzAN/Nfqn8amlrtpbfCryAC13rY0FcFjVwuDBQ2QpO/TB4tyuWg2a1FNcMrjWJ8YK4GElspGZv9M7DYOuBrVUyU0XokNSFBTHKSoKj+KuDztOqOK/r6KOBk9BD54ckMmXB0tcqMO/aiDhPs/vr4UhHEjo3AMUvlZL/v1zTud/vutcqRjIiTiKj9droxAOkOFdvEOIUt0Oda2LNfMTV6TpiS8aqJdKBvX91dOwV8qA4Vx//szhYtgUWHxdbR4wXnRv9RUOxF0EbgI54A/fpS19G/BcAAP//6C70NgAAAAZJREFUAwDHpzFMOPj8PQAAAABJRU5ErkJggg=="
+        />
+      </a>
+
+      <a href="/Marcação/index.html"
+        ><button class="marcar">AGENDAR SERVIÇO</button></a
+      >
+    </div>
+    <!-- ==========================
+                  INICIO (1)
+        ==========================-->
+    <div id="inicio">
+      <p>UMA EMPRESA DE ESTÉTICA AUTOMOTIVA AO SEU DISPOR</p>
+      <h1>A ARTE DA LIMPEZA <span>AUTOMÓVEL</span></h1>
+      <p id="p2-inicio">
+        Especialistas em limpeza, detalhes e proteção automóvel
+        <span> com tecnologia avançada e resultados impressionantes </span>
+      </p>
+      <div class="bt-opcao">
+        <a href="/Marcação/index.html"><button>AGENDAR SERVIÇO</button></a>
+        <a href="#serviços"><button>CONHEÇER SERVIÇOS</button></a>
+      </div>
+    </div>
+    <!-- ==========================
+                  QUEM SOMOS? (2)
+        ==========================-->
+    <div id="quem-somos" class="garantimos">
+      <div id="img-sec2">
+        <img
+          src="https://i.pinimg.com/736x/90/55/89/905589854e8b82a4adb6d2bb935b8ae8.jpg"
+          alt="Estetica"
+        />
+      </div>
+      <div class="sec2-txt">
+        <p id="quem-sms-p">QUEM SOMOS?</p>
+        <h2 id="h2-sec2">A WD LAVAGEM Cuida do Seu Carro com Paixão</h2>
+        <p id="txt-sec2">
+          A <b>WD LAVAGEM</b> é especializada em lavagem de automóvel e estética
+          de veículos em Cascais, garantimos que o seu carro esteja sempre
+          impeável e sempre com o melhor tratamento.
+        </p>
+
+        <div class="esperar">
+          <h3>OQUE ESPERAR</h3>
+          <ul>
+            <div id="li1">
+              <li>Equipa especializada</li>
+              <li>Proteção duradoura</li>
+              <li>Brilho Intenso</li>
+            </div>
+            <div id="li2">
+              <li>Materiais e equipamentos premium</li>
+              <li>Higienização completa</li>
+              <li id="serviços">Acabamento profissional</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div "></div>
+    <!-- ==========================
+                 SERVIÇOS (3)
+        ==========================-->
+    <div class="serviços">
+      <h2>SERVIÇOS</h2>
+      <div class="serviços-div">
+        <div class="serviço-conteudo" id="lavagem">
+          <h3>LAVAGEM COMPLETA</h3>
+          <b>DESDE 30€</b>
+          <p>Limpeza completa do veículo</p>
+          <a href="/Marcação/index.html"><button>AGENDAR</button></a>
+        </div>
+        <div class="serviço-conteudo" id="polimento">
+          <h3>POLIMENTO</h3>
+          <b>DESDE 100€</b>
+          <p>
+            Recuperação do brilho da pintura e melhoria do aspeto do veículo
+          </p>
+          <a href="/Marcação/index.html"><button>AGENDAR</button></a>
+        </div>
+        <div class="serviço-conteudo" id="farol">
+          <h3>REVITALIZAÇÃO DE FARÓIS</h3>
+          <b>DESDE 50€</b>
+          <p>Remoção de desgastes, opacidade e arranhões do farol</p>
+          <a href="/Marcação/index.html"><button>AGENDAR</button></a>
+        </div>
+        <div class="serviço-conteudo" id="higienização">
+          <h3>HIGIENIZAÇÃO DE ESTOFE</h3>
+          <b>DESDE 80€</b>
+          <p>
+            Tratamento profundo do interiror para eliminar sujidade e odores
+          </p>
+          <a href="/Marcação/index.html"><button>AGENDAR</button></a>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+           BENEFICIOS (4)
+        ==========================-->
+    <div class="benf">
+      <h2>BENEFICIO DOS NOSSOS SERVIÇOS</h2>
+      <div class="benf-div">
+        <div class="benf-top">
+          <div class="square-beneficio" id="sq-1">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACU0lEQVR4AdSWjXHbMAyFyU7iTNJkk2QSO5MknSTpJMkm7vcxAo76cS2pzeXi4xNJkMADQIjyj/JFv+9FfD6fD+Be7E3YpoghugVPkL0B+yfmb+AF3CNb3a4SY9DoTvRnrL6AKcEB2S3Y5MQiMSRBZmTiiOFo7wwewR24AY6VMSyrnUjijsyogkxDZfhp/LHWelNrPYFX8A4c64C45oSZaeaSmJkpNLJcRBZk2K+NENliq7WucSJt98RhsJExkUh4vhbVaqBbcORSJlwuPfErkjsUGhnjQvqt1igqj2AtotIP2MtMMD5pVyQxQs9McuXC1yVTo2Aj1LXS+zpJE0mcEgZEqpJgVnTGCt6C5/Lx04b4mHXPRWLWY7NpMv0tG5GVFf0DNqwVuvLTxxSXiK1u9/7ysRNmSlWv1lm6Z8RDmlUQ4bXjrfjdKUQGUzQjZiU2meY4K8TbGsehbjg+S/eImGhNSaQ5XidfqV3AVe3RlVm6k3gg9ap0o1DJ6P8F2gn4bmuzzZOYmVcm3ahFqkbCDZOpvkE09Z64CYbHM2dk8+L3rAbx6s76CH0/HKG4GHEs2veb++p0bQ1SH/a8JnvFSxFnSticXjJe21KH2rlK3J+Hd2yrZJiOYGs7Qqi+9/2ifh9xTyyRUQvHe6DutGCzXpKYs/CKy7PZw3RFx38vGVwSD0qSD8PWuRmftje0p0GMbE+J2f/fWkY3WBzNR8TEpVd+d/X2gfliRQ6G/tqh63n6edSWn9bLxFpCwW+v/5dUVLQb2PIi0pYBjeyMIh6tfPLkDwAAAP//AxAmOAAAAAZJREFUAwAviWRM3ixXEQAAAABJRU5ErkJggg=="
+              class="red-back-icon"
+            />
+            <p><b>Proteção Duradora</b></p>
+            <p>
+              Lavamos o seu carro com produtos premium para proteger a pintura
+              por muito mais tempo.
+            </p>
+          </div>
+          <div class="square-beneficio" id="sq-2">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACC0lEQVR4AeyW0VXDMAxFXSYpkwCTAJO0TAJMApvAJuVekxi7duyW9sAHcPwSS37Sk5U45SL80t+/8I81/uhW73a7a/DYqhD/GmzBI7hucWbfUcIkuyPwBdwx33JPA3uN8QY2IPLwFRz8aXSFCSyqXq1WT0S+T3DONAR4s2i0s8uGtab4ojABJmu17IbENxRhAS1RC7qEE9e5K15sAF9oCiNqlbZN8ZfJlh8UFBr4XZenKZ5YuweKWqA+cZgwgQq/GgFeJ5vp11gS/WKETTa3kMwM7R1nDKuugkairPvW+4KZ6p3Cbb/zhKVWryH7HN31Q2IzIel+e/GGxGG9EGXxHlSjKYxo2mU+J2lL1KS+B57hSpR4i5dToClcMCajIypjLii1F6cvWVOUteEzltM6MtG/cLFbXVHjhjse7NQcOQ4SNaArfKoo8dX5VVQsChM0Pzd5I1Q7Jd5vQX6WixxNYYK+LUrs/AOiaPwlw2cRY2EY+WcQc3FUO4Xpm3zLfR62W99sx3u1Y6qbj0QkdC4t0cC51Z8+KMT75RoLQ7wCo2Hy3pExh+LCx1blq3YM4xn0xkjU2Gd2vhUYfu+5laMShmxbrLRkflqHiNpuc8QI8hkT5/mlEnYRsm/hvrgJeu019GA0hY2exP1Pwp+0B+xLkHYi5xQsCpsUId9Id2kHdJ0NXeGzqTQS/T3hDwAAAP//LcS/iQAAAAZJREFUAwC8R+Y9xF8ZcgAAAABJRU5ErkJggg=="
+              class="red-back-icon"
+            />
+            <p><b>Brilho Intenso</b></p>
+            <p>
+              Polimento e Lavagem profissional para devolver o brilho e
+              profundidade a cor do seu carro.
+            </p>
+          </div>
+          <div class="square-beneficio" id="sq-3">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB1UlEQVR4AeyW2XXCMBBFlVQSKgEqgVQSUgmkEkgndELuFZIOAluGsISP+MyzR5rljUaW4TX80fW8xLvdbtGDt2ua1VwxhHOSf/RgzXzA5w1MRBpHnXEsjGc11kc0iXGIwTy7JNuWGC3CAlGDuphLyoS6yP5MhTBEHJ28vaQL/RNcLWcTN5gsZIr9HSjqYsVgC9Sn1L1BL3I2MW2LLxmRY1DEhAmSOD/hJnJr1d3nPMY83OpDEvdQmCgGU0yVLE6GoI/QT7u6UE8uDWKS+kIYXJw7lDV+i475wanOVpPskNQW5n0ckdE9c4waXMUM/1Igbc+yQNmALO09JolnNycycERkTrJFd85VWkDgktwjhVoLuTzjdkXknNGpa8WzaOEGSU7OqBZsrqCsHJIqcfK2KOdFmto/uoizk8dh79V/P/TJccfeFijcsmKriI+q/i5ePQqrNplJ9Rh7OwR2t8UzLPQt5oq4zO6VJYUMCq59K8XULy3i/qgbWFrE7p8vzxCqFp5bU4v4iz3yGDUB0c2JyXk/aa34fqxk/iemCY+Rp2y1vygP+3L96kymzbkotmo1HwyD/dM29LU6sRNrXKph+FER606CFWh+rbrsxl6CE+JLgq/x/QEAAP//5mi2xAAAAAZJREFUAwDscgNMKfl3qAAAAABJRU5ErkJggg=="
+              class="red-back-icon"
+            />
+            <p><b>Materiais e Equipamentos Premium</b></p>
+            <p>
+              Utilizamos produtos profissionaise técnicas avançadas para
+              maximizar proteção, brilho e durabilidade.
+            </p>
+          </div>
+        </div>
+        <div class="benf-bottom">
+          <div class="square-beneficio" id="sq-4">
+            <img
+              src="https://mrtautospa.com/wp-content/uploads/2025/03/Icon-4.png"
+              alt=""
+              class="red-back-icon"
+            />
+            <p><b>Cuidado Personalizado</b></p>
+            <p>
+              Serviços ajustados as necessidades específicas do seu veículo,
+              garantindo resultados superiores.
+            </p>
+          </div>
+          <div class="square-beneficio" id="sq-5">
+            <img
+              src="limpar.png"
+              alt=""
+              class="red-back-icon"
+            />
+            <p><b> Higienização Completa</b></p>
+            <p>
+              Processo de limpeza interior profundo, elimando pó, bactérias e
+              odores para um ambiente mais saudável.
+            </p>
+          </div>
+          <div class="square-beneficio" id="sq-6">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB70lEQVR4AeyWT1LCMBTGUw/gwsE9Mx5EWXsGB7iHM+DaGRceQMAzuEcuot7BA+DvS5tMUhKghaILmfflz+v73pe8lLZn5pd+/8InK/zfLPV6vZ6CT9DUxBlB6udKmN0xpBmkCciSuZYzccQf5QKSwoiK6EjvkB8a4ot42aTKpXGEpDARTtQURTEoimLaBPAHwIn7XPi85YRVYgU5ssZ7g0WKJ4gzVFPHhnCtNIs6ocHccfu1nDbFhjBeXxpWPmXeyuDOIbpd+5z4rKWEXZkNK9XfqTWsQtkMyaUbtpzRemFdAEt8oWkRh8CJqZ+RX73N74WZqRw39F2Zcgs2fyhsHWo4n6OaclZI7ri6VnaUpQdewRu4Lr27W8UCccTt5RjJHVfBT/R34Ba8gH1NseKIqxxJ3jbhi4BxGYx3DcPYMEfE2yb8SOQH+Ab3YF9TrDjiKkeSlxXm7lqBK3AOnpPshFOxQBxxV4kQ6wqF3VNGD44lN8jRYJVqTSis158T1//tmHCyeozasRemPBLVe9deqBr5tKA2ELdKY7txpWEnXtjOjKkHLwgetIExxr2dGFqLcteFbcQpmi6Fox2ymWgeCVNSnaU+W3TWOpND38djBJVLx5UXJshIHOgby9+B8rcBeeZAubShKEW04+hKx5MfAAAA//+Wxo8xAAAABklEQVQDAMpoV0xjxjm8AAAAAElFTkSuQmCC"
+              class="red-back-icon"
+            />
+            <p><b>Acabamento Profissional</b></p>
+            <p>
+              Detalhe final, cuidado ao pormenor, garantindo um aspeto impecável
+              em qualquer tipo de serviço automóvel.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==========================
+           MARCAÇÃO (5)
+        ==========================-->
+    <div class="marcacao">
+      <div class="div2">
+        <h3>Faça Já a Sua Marcação</h3>
+        <div id="marc-1">
+          <p>
+            Agende ja o seu serviço na WD LAVAGEM e garanta um brilho
+            excepcional para o seu veículo.
+            <span> Cuidamos do seu carro como ele merece </span>
+          </p>
+          <div id="marc-bttn">
+            <a href="/Marcação/index.html"><button>AGENDAR</button></a>
+          </div>
+        </div>
+        <b>OU</b>
+        <div id="marc-tel">
+          <div class="marc-icon">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACCUlEQVR4AczVgVHkMAxAUd9VclcJUAlQCVAJUAlQCZSCXogYj9abTSAzkLFiWbb1JdnZ/dt+6PnV4NsoynnIru1Uxk9Buwm5DxFAdPu0JTBoZvovcJchu8GPgXvoWwC1XeEjsLJmps9B/B9yHaLtBh+BrxBCQC+i1x7iVeG5Lqa2twrOTHm68+qkwl26bnqbWsF5nrwoq74XFyzHKpL65r6CewcVXM8+S9/vWa1XsIwzk7PiJc/Umjz7smT9sILtfPEKqRlnQDH1/TYCJwA4s0TKy1bt5jbLCKyUCe9vbrULYDMwNxwDP84LOM9PDLi3+3UzPy/97FzC1xgt/ryOwLGnZcYtHo6im5pvuS85eA8wdjwC8un1c5ODfB0Dy64HLMEdhwxJVof/RfgxsI2ilSFdFsZ0QdF9x3Q2EEJXLXN0tmHmS2AbZZ3OqwNB+Z5B6Nbp2fTsfAzhp8CccZQOlFW2xsR8Qvp/MXNppyf88yhOgW3inFO9MXg9T/aRgCu9OXBCb2vAFoLKXOmNOXCDBdBXwFwv1mSWAhDINL8WbDE4SMLZBJAVAHH7XUQwY711oAKnT7IFPG2IF7jSC0AwYWoCAAEFX4S2eL4Cjm0NUACycHuVUFatPIKzppjb6jM+2DgbBAAKDqAShP4n1gguusP21YwPPX1YBEJG2X+smN97g2e3p7sfA78DAAD//8IhoKkAAAAGSURBVAMAA5lrPYh0uYIAAAAASUVORK5CYII="
+              width="40px"
+            />
+          </div>
+          <p>Fale conosco</p>
+          <p>+351 XXX XXX XXX</p>
+        </div>
+
+        <div id="horario">
+          <div class="marc-icon">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACTklEQVR4AdTWDTIDQRAF4OUiOAlOgpPgJDgJToKT0N8mvdUZO8mGVCmpfTsz/fNe9+xfjoc/+v0r4dPYpOvAXcAIFzHf61jaMTFCn8H+FngI3AaM8BzztC8qYpdwCiIlFPzdQ6zuFQLW3eBtwhJ1UgVfguk+cBk4CpwFbgJsfDEd5ClArvkw9+sJS9ClUd57nIiBLU8R9sfwsfEphC1Mg9yueE/YVg3rn24QptjaPDsQVYAcAV3xOWGieYMg0A2SFmIAefURlyOXnb9eLrahFUbk+nAmgXkLcbYRELd+a5cgd0k8sI9oha9G6+rkplnNfnZWeHIobqPrVjirqtX+THaVRTy7Jr6yxrkKE03nR/gOdbyuiXDTGJdVmGM0xkmlMSw65CGsYMvk7Nh6sldhjkQNTltv9BS4ySomgUiqTUz2KjwZI/iQRxWe5lW4drmrCAReFD1Urnw8N5qpwtXhetV1OyeMvIcaX5sQP/qqMLLRGKfzwKGOk0I0abTCWZEqd3Vd+LpTHLnV3g1TYBVmrG8adyvbb1DfVk+VqBW2FVmZrn8j7kOhY3o4czetv30kGH1VFGAuEYH5PpCT3eLKnZw42o45BHpMzHWNwJ8CRbBtg3ixcjLumyjHnDA7cR9/ozVC2+7tZHTDsIGCdMhHlE2OXA1sbDEH9IT5MtHWWyMkQpQ4ESCoQz5xIEfhs6ICtgnzE9cNEjcIWw9iU1BOL2607xIeg+KE1LVSgO0zB0JGNj6CYiNl+7FUOFmQ2j7dAyEjW8YsGvcVXkS6JOgLAAD//5KjTHgAAAAGSURBVAMAt/B9PUH6JTcAAAAASUVORK5CYII="
+              width="40px"
+            />
+          </div>
+          <p>Horário de Funcionamento</p>
+          <p>Seg-Sab:09:00 - 18:00</p>
+        </div>
+        <div id="address">
+          <div class="marc-icon">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACWElEQVR4AdTU63XVMBAEYEEjQCWESoBKgEqASoBKgEpgP8eT6F5bfiQ/cuKjsVb7ml1J9sv2RM+zI35dG/W58KFwUzg9znSM4Ecx/Cv8LnwqfC3QWYNiSrU/jhCnOwTI17LyAcUcIt8jlkwnEiL8U68vhXeFF4U3hY8FOrYSG18xoyL5tD1iWzk51utnAZGOyLVsyL611ugUo4BWj4L72FJdji1iyW5mdwklnpdNYvb+cimCjm+rJz4lLscWsS0ToTsJyZI5a1vJrqus2fjYATHk9/VK8SXejxGxTuKVDqwRrSVCqgA+OnfuZHogX2BE/LbzSvU9qa6cN5C5I8jOIIfozRcYEaerJBUUHVlHEoMdMdP3Ba/p+EwYEauew1+vGdH1xTAhyK7Eh/6XV6HX1fJ2jIgl4/HKa0aS953PphZd4lo9fWwtL8cecV/t9zmULucd2czcE68Vw2fCiHhtm3ScxG69W+yzIkvG5uzJsFYM/YQRMRIOgvvEfiKxsQd0bnjWibHOTpHvsEUsGUc/CjPoCjkS3bnR1sAe9DHJE9s0j4gZU6mu833SgwLcbvrrxLoVw09x5gW2iCUEQcNfH2MHhC4elVjFkRfYItaVrRTUJ7QeIaTsiSUvsEXMWdVJsEfulucTEiNWjlXsEQuyXUni/Pqu2KEn5evs6Yc4QmzLXRIJJbomvya9vuFiFjhCLCjkZmvkfh49KdshUgmOEvNN4nTuzHOmdL5tfodwhlhC5Lbd5bEGpIc7FQBnicUgd3lSwGlSSR5CLA7cdgWQT+MxxKfJ+oD/AAAA//8ruH9JAAAABklEQVQDADUBfj2ZgRGjAAAAAElFTkSuQmCC"
+              width="40px"
+            />
+          </div>
+          <p>Endereço</p>
+          <p>Rua bolinha, 123a, 1234-567</p>
+        </div>
+      </div>
+    </div>
+    <a
+      href="https://wa.me/351910373166?
+      text=ola!%20Tudo%20Bem?"
+      target="_blank"
+      class="wpp"
+    >
+      <img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACvElEQVR4AeyW4VHkMAyFs9fIQSUHlQCVsFQCVwlcJdDJ3vdpLZ+dONncDDP8YceKbflJT5LtZH9MX/T7Jt5d+NPpdIXcIFe7jRrg7lJLgByRV+SEj3fkFXlnrjzT3zPf1XYR4/CIN4ke6W+QjyJv9DazllRyg3CuflU2iSG0nEko2ROebg+Hw/XhLI4P6K6RB0SMpFbFYFGN2yoxpGYmqY7eCtGRPrOsHtF9IC8obhGD0+YRH6vkq8Q4sKx00xNOdeh4U8AZgGSJv4PcBBZ2Q2LAGmtgpo7DEL26GG89CMCqZObPI+yCuDjPbN23sENv2d27XeQYWfrYc2w9eKj+tQUxS+4P3fRA5BpOxTD1GZSYVSm2GfjdHDgi/lVAlqsMp9Q5/5+XRgSOUQbN8NxGxFHKEvEZNU1/ckDvvqdDpuut+BDrtezIR8QCBLce2+zbIFrM2jh96bdiOmL2sltMVIm87he4qEquX+iTOPuAd8SFIBbmD9Y8pfWKtOSOkfu5TZlHkNivExegZXVPwqDospuT+26W0I+FY9/T9d4XI6uozzI9d13GZ1U9SIsrYNSIjjNzSdsXhCQ/i5+8hk67bFWMiM3KtVHG6qdC7ochsaHnIcFv+mx551tdrC2IcaqxpbHcZhTA+UMc4oEzAN/Nfqn8amlrtpbfCryAC13rY0FcFjVwuDBQ2QpO/TB4tyuWg2a1FNcMrjWJ8YK4GElspGZv9M7DYOuBrVUyU0XokNSFBTHKSoKj+KuDztOqOK/r6KOBk9BD54ckMmXB0tcqMO/aiDhPs/vr4UhHEjo3AMUvlZL/v1zTud/vutcqRjIiTiKj9droxAOkOFdvEOIUt0Oda2LNfMTV6TpiS8aqJdKBvX91dOwV8qA4Vx//szhYtgUWHxdbR4wXnRv9RUOxF0EbgI54A/fpS19G/BcAAP//6C70NgAAAAZJREFUAwDHpzFMOPj8PQAAAABJRU5ErkJggg=="
+    /></a>
+<script src="script.js"></script>
+  </body>
+</html>

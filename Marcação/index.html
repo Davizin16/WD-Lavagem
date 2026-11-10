@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- ==========================
+                    CABEÇALHO
+          ==========================-->
+
+      <img src="wd-lavagem-transparente.png" alt="LogoWD" width="150px" />
+      <a href="/Inicial/index.html">Inicio</a>
+      <a href="#img-wd-final">Contacto</a>
+    </header>
+
+    <main>
+      <!-- ==========================
+                  PARTE IMAGEM
+          ==========================-->
+      <div id="comeco">
+        <b>WD LAVAGEM ━━━━━━━━━━━</b>
+        <h1>
+          Marque o seu <br />
+          <span>serviço</span> Conosco
+        </h1>
+        <p>Rápido, facil e sem complicações</p>
+        <div id="calendario-text">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABVUlEQVR4AeyWgRGCMAxFxUl0EnUTNwEmUybBTfD/nnBCmpZ6qdI7vXwrbZK+RKnsdxt7/YFiX8jqDg3D0ECjNbHEcEzyH/OtBhoDco9lAKHdB+gGTYbO1NBo9bSgfICj5t8jhDrAR5jWoR6eZyiHEYRiwRxnewgg0F9nHvkuCCOKFkDYn44YvmJiLx/QO8kdF62xmBMp/RYD6qqqaiwFjA5SLQakBuZaiAGd8CPniWsmFHKCVIsB8S7geWIp5vwYSA3MtRDrUK591bxFA7W4/Z2hPJ5NGJylzrsg7a3oDmlFmc6ndGh65AABjwEMzlLnXZD2lgKk5TCdLxoo9W7S/IMdLbpDwcqsFlM6lHo3af5B9jVAwQTWi0UABZ95jTvyWObzdUg4LYMMr0XxAgh/5wQ6YlPhjDkr4x6X116znAKIq3SEGIAhix2R1VuwF4hQv9LmgJ4AAAD//ztgy4EAAAAGSURBVAMARJkcWNMRo+AAAAAASUVORK5CYII="
+          />
+          <p>
+            Escolha o serviço, o dia e a hora <br />
+            e deixe o resto conosco!
+          </p>
+        </div>
+      </div>
+      <!-- ==========================
+               MARCAR SERVIÇO
+          ==========================-->
+      <div class="marcar-serv">
+        <h2 id="h2-marc">WD LAVAGEM</h2>
+        <form id="form-marcacao">
+          <div class="nome-div">
+            <label for="nome">Seu nome:</label>
+            <input type="text" placeholder="Digite o seu nome" id="nome" required>
+          </div>
+          <div id="tel-div">
+            <label for="telefone">Telefone de contacto</label>
+            <input type="tel"
+            placeholder="Numero de telemóvel" id="telefone"
+            required>
+          </div>
+        
+        <div class="serviços">
+          <div class="titulo-marc">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACBUlEQVR4AeyV63HCMBCE92QzE5ImXApUAlQCVEJSCXQCTQCZwfiitWxFGDmDeSU/opmTbfluP71OMvil8g9+2sT/zanemnS2M8l6Z1LtZsl6n/TGe7xkbVPYOuKtSRYCTAFpDUZrkUxVF4XJx20uUTB7KhAXpFgpMO9igG4IFNtxavG9aVFw2NNXzYdvRT7rYlL0hjU81ArhUTB76pxcz9375XUfnxuoVKPWUSzyDBxOjUI+YkGXtImpYyULNevYM3A4NZze2rHrs388vP803WdgsRuihmxtOt1itY5AR81RezB/7CRd1s58shO3GHwqSqaSL8hAVTy4nGLBAI8q1E6OXt+DH8ULdQtVfxjFwYqViEwUmNcbBB0LY6nRFh8FMxW4K7mr9YqUUtthxlLDak1ifY6CcUxWMedL24xIeXiU/nn6/V42uCoKLsxhyh3IG0ZsKjjXy2vVYrpP0wE1uJtjkVGw2AtCTb5We8PApwQ6FMm0wJIa4G6ORHrwyfREHO/d5MFuXTW6HveCmiK1x6hT82DeKCLGpo/74WrbEZtauMaqO9npAEwtMlAVDy6/xYLKF1epTSXex9cYY51KVTe0T8GVzzMeDwObMJc5kkY+n4D7eb4Sg6Hak4drwtOHMddYeWpVxy41w/Wl3gmYDYQTyEB+32LUKLXsgJo6Z+Cmw6O+vwAAAP//L4DmZAAAAAZJREFUAwBTslhMpAg7uwAAAABJRU5ErkJggg=="
+            />
+            <p>Selecione o serviço</p>
+          </div>
+          <div class="escolhas">
+            <button type="button" id="btn-lavagem">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABx0lEQVR4AeyWb3LCIBTEoSfxKHoS9STGk6gnqTexN0n39wwMEJgpaWP7oZ23CRB2lz8P6pv7pb9/45ct/N9c6nEcB+Eh9Aacg0ib1hI2ZyzSRaST0CTrWyvgwD+0OlSNZQoxkO4inzvxof7EadKinKFqrB7B1Hnvd977oQfi74RgHrXUFqNlzBLTKZApfxkaJDwAZ8+jxMy4WJpbSeioB+6m0DSJmbFa49Jo5IPqi0Lcq4hh1lFTbRY147DMTiPlOC2GOTwfe2mRsM+antGYD8K72tJgEN9BMON9kT5v04/GqrEcW73XCrSB6afG1rDyozrj1JNL46gGLo6QIKp2BVw0qvzWjG9kpUBWh2PR43qGK5DZmM+4LWNmPOvc0ZDOMi1HiZax3bHKQhKuevNEhXoB/lZ89pR/FrNeLWMMH+oNCbKKXQGHo4lGzORUITWuLkna+SfLqTH7urY5yWbjj8bKQEw5AvZhetDGgJYA7iRjr+PkYZVobDXnys4cq50I3XDOlccw0y6N1f81saZxNkNNJ6tnxlpS9pKfLew1e8LNJU5/SItE4tZCi61qGyMvwl3gNxZEmhZDOlcBLSaU6WQzzr6sXPkEAAD//y5hkgwAAAAGSURBVAMA6u39PVfgWiAAAAAASUVORK5CYII="
+              />
+              <b>Lavegam completa</b>
+              <strong>30€</strong>
+            </button>
+          </div>
+          <div class="escolhas">
+            <button type="button" id="btn-farol">
+              <img src="farol.png" alt="farol-img" />
+              <b>Faróis</b>
+              <strong>50€</strong>
+            </button>
+          </div>
+          <div class="escolhas">
+            <button type="button" id="btn-polimento">
+              <img
+                src="https://mrtautospa.com/wp-content/uploads/2025/03/Icon-3.png"
+                
+              />
+              <b>Polimento</b>
+              <strong>100€</strong>
+            </button>
+          </div>
+          <div class="escolhas">
+            <button type="button" id="btn-estofe">
+              <img src="limpar.png" alt="estofe-img" />
+              <b>Estofe</b>
+              <strong>80€</strong>
+            </button>
+          </div>
+        </div>
+        <div class="serviços">
+          <div class="titulo-marc">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABl0lEQVR4AcxVW26DMBC0iz/yRdUb0JukNyknaXqS5CbkJs0NqqY/kTByd0BUYHuxpSUKUQbb+5hZo8V+Ug/6bVf4e7erfow5AJhzLwg+xACYc3GjPbljY22llfoAMB8T/RE+xACY+35/nRT2E9ZaB8J4TdeiOF6NcYBTqhnFMIctBviCuKL4Ahc4R984BsJF2zZK6/cxQDRqXYGr5/SIZsK/xuwpsPJi5EsqoOeeMM2EJ3alnLvQ+rwCiCL8s8Ja67q09k0CrdRnKDlYWOHBfb8nK+zo26XubSRwzh250llhStiLQU1FHNH/knA0YS3jpoXP1NkaoN3i86JB5doQG8WGd+zc/7VIh8pwquXaonsdjOkdU2fSQdBfi4rmfRqNWbY+OP5IC8fzxNYc4dxGisWxBeYIs8kSR1o4t5FicQuVpYVzGykWJxJeSJa4Zju2xuDyl/CxuT73TPjldrvQdche3ixryuHcCdzTsJkwHM/WHjpjXumwqFGEFOAqu64G9xSBMJyormzbE4qQAlzg9BEV9oPusf4DAAD//4Dq6CAAAAAGSURBVAMAWsVOTJQmvzMAAAAASUVORK5CYII="
+            />
+            <p>Escolha a data</p>
+          </div>
+          <input type="date" id="data" placeholder="Selecionar data" />
+          <div class="titulo-marc">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACAklEQVR4AdSVbW7CMAyGnTVI/BnTbgAnGZyEcRLgJGMnYTsJu8E09gepoZnfrh9x2/QbTUM1TerEj1/Hau/oj37/B/w5nc6/tV5+ab2DnSeTZ8y7Fq6VYsBiSBCcAmNOluioiLYwsvYF8zP7zlofkUibJBrBAAIWQ5Sae4P++pZIBEkgWe9adtSCoUARbXldt4uTCMLwiKR9G71gQHnTkq3fxXAk7YNXgttA+Vz3MM7qjc17KWvXVc1XAifN0aj0wZgdjOHvXiocrNxyA2LoWgnMzbF2F4wyZnix5ALcVm2fZFByd58AUxQ9uc5Rx6zaPWsJJmo8Wxrwi5z4EsxZdY2rlPrgPehsadbiObvySxFlFc3ATW+afLsczcLwMDNmVTSr1KtcKWcZWD6+/aw3GC+ZOit2cSzFKX8GfrxcSmcSL/b/oRH91tAvGTiJjwZJhuPflHPuAsxdtx8fl0e8NyYTJsBGa5Q7c+Zbho8skRAlwDjnW6nGB8VNX4DhQDmK2eH5EGMxq+L+EhgLIq0PfB+n5EptIIbjiasSjJJftd4MVs5QvNkEMZlUguEDHOfSC84vCpTXB0V8LxhOGOCsfpEkUF9+BhJUXq+LqvIiXmqNYCxM1eNDgCQQHBYnw6BYnTFqxsA6lYiVWitwuhh3JIHgMFQD9yZ12Fe0zuBigL7zHwAAAP//BoEsJAAAAAZJREFUAwChu+M9p4XowQAAAABJRU5ErkJggg=="
+            />
+            <p>Escolha a hora</p>
+          </div>
+          <div class="horarios">
+            <div class="hora1">
+              <div class="horas"><button type="button">09:00</button></div>
+              <div class="horas"><button type="button">11:00</button></div>
+              <div class="horas"><button type="button">10:00</button></div>
+            </div><br>
+            <div class="hora2">
+              <div class="horas"><button type="button">12:00</button></div>
+              <div class="horas"><button type="button">14:00</button></div>
+              <div class="horas"><button type="button">15:00</button></div>
+            </div><br>
+            <div class="hora3">
+              <div class="horas"><button type="button">16:00</button></div>
+              <div class="horas"><button type="button">17:00</button></div>
+              <div class="horas"><button type="button">18:00</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="serviços">
+          <div class="titulo-marc">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACWklEQVR4AdSV0W3bMBCGjxYN5KUuuoE9Sa1JGk2SdBK7k0ibOBsUdV8ChDL7/4LJ2uJREfUSROBZDPnffbwjqazkg57PBf798LD9Y+3zeb1+XFqw4ozPVXWonDsZkSfx/nC21mPsJIVPERiQVoxJszRmWwqfBLOkCHiAnQD1SGoP09sVftW2f63NaxEhC+b+saRDhggK7fuNOprIHqtseQ5yTip4WC32L+c0d9x4/2OIpTioYA8HRVs+hOyR+ZPmqIIhnNwfzM9v3m81sQ7GSjXxorFMrASM09suAtDJ+xe+xsaTPh67A1+hi8psROp+va7xUUnhyHoMvwNjVYuhX5zrvr2+vshq9RNx0gY4vwthIoJ5b8Og+vb+6EWSoMyUUPoMV2fiGlrnttTRIhh3Li0RFTRjmk3fNxdrj/izgw1tDMXCJs+HR9aDI34i2FmbB18u36EVlrK3tkG/K4XCR/qqiouOYAbFZJxA/38z5hGH48AB6jbO1bflfS9T+uHQHek79PETwehLyIb9xG7gYY57Ogsq0nGrgh/fd2Cu6ArnXGo38AKosELjYHdgThKOsuT3m3Br25mZMqRqCXhQGZMHDwLZy9wH11CTquDJcmtRJsaMMb+0aRXMcqOUycdCCzA5ZkwTTv9Yp4Ip+urcMzLfod9N7jkEsfGfBA2n2IjUm7c3fnDi9G0nC6aImfNE4irs4iI4oRuvzI5a+uQyDa6T4CDim4sAvEH2WhYdYdTNtdlgBiQcGTVYwE6wfzwHABpYzfkSKwKHwMMCsH88B2Gs9L0IXArR9P8AAAD//x/E2AUAAAAGSURBVAMAjNADTMgjCaUAAAAASUVORK5CYII="
+            />
+            <p>Resumo da marcação</p>
+          </div>
+          <div id="resumo-lavagem">
+            <img src="https://i.pinimg.com/1200x/d9/94/00/d99400d1f43ff617dc0e1cb31efb7329.jpg" alt=""
+            width="100px">
+            <p>Lavagem completa</p>
+            
+            <button type="button" class="remove-serv">Remover Serviço</button>
+
+            <b>30€</b>
+          </div>
+          <div id="resumo-farol">
+            <img src="https://i.pinimg.com/1200x/54/7b/01/547b01c7fa3b54fbd7e204969b96dbc3.jpg" alt=""
+            width="100px">
+            <p>Revialização de faróis</p>
+           <button type="button" class="remove-serv">Remover Serviço</button>
+
+            <b>50€</b>
+          </div>
+          <div id="resumo-polimento">
+            <img src="https://i.pinimg.com/1200x/0f/e9/cd/0fe9cd69c6a93142b8b3b2a03b7ed3e0.jpg" alt=""
+            width="100px">
+            <p>Polimento</p>
+           <button type="button" class="remove-serv">Remover Serviço</button>
+
+            <b>100€</b>
+          </div>
+          <div id="resumo-estofe">
+            <img src="https://i.pinimg.com/736x/19/60/0b/19600b3f44383f8bae689e96d571f440.jpg"
+            width="100px">
+            <p>Estofe</p>
+            <button type="button" class="remove-serv">Remover Serviço</button>
+
+            <b>80€</b>
+          </div>
+
+          <div id="dt-confirm">
+             <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAABVUlEQVR4AeyWgRGCMAxFxUl0EnUTNwEmUybBTfD/nnBCmpZ6qdI7vXwrbZK+RKnsdxt7/YFiX8jqDg3D0ECjNbHEcEzyH/OtBhoDco9lAKHdB+gGTYbO1NBo9bSgfICj5t8jhDrAR5jWoR6eZyiHEYRiwRxnewgg0F9nHvkuCCOKFkDYn44YvmJiLx/QO8kdF62xmBMp/RYD6qqqaiwFjA5SLQakBuZaiAGd8CPniWsmFHKCVIsB8S7geWIp5vwYSA3MtRDrUK591bxFA7W4/Z2hPJ5NGJylzrsg7a3oDmlFmc6ndGh65AABjwEMzlLnXZD2lgKk5TCdLxoo9W7S/IMdLbpDwcqsFlM6lHo3af5B9jVAwQTWi0UABZ95jTvyWObzdUg4LYMMr0XxAgh/5wQ6YlPhjDkr4x6X116znAKIq3SEGIAhix2R1VuwF4hQv9LmgJ4AAAD//ztgy4EAAAAGSURBVAMARJkcWNMRo+AAAAAASUVORK5CYII="
+          />
+            <p>Data:</p>
+          </div>
+          <div id="hr-confirm">
+            <p>Hora:</p>
+            <button type="submit" id="conf-btn">Confirmar -></button>
+          </div>
+                </div>
+                </form>
+        </div>
+      <!-- ==========================
+               QUALIDADES
+          ==========================-->
+      <div class="qualidade">
+        <div class="qualidade-text"
+        id="serviço-qualidade">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACc0lEQVR4AdSW4VncMAyGnU5yTNIySWESjkmgk0AnKZ3k+r1GX2rHjs/hDw/3RLEtS3ot2TF8S5/0+3rgy+Vyh3y0YIczFuws+SPgE0Jfclb/0DMNJrgE4IMIJ4kf+g/MSaYXcBVMMMkW+Cbqo+ReQl9NOrSAXbBgLmmZIZDHZVlulmU5S55TSreSwwtowAJyaLoZCpSBAq2PdG+SwwuowIKeFJFDQ6tuqjJMg5/gowX8VOwfpXsF1oSB6qZnBWsyTFd+8ikXwDnAo4zLOG3BWRmvX9FONcroJLmzMQtQ/1XSfbZgSts1HCkFJCPOxZP6K1w+6NXkp4q9BWeLeJVOoWobgbAD6snv7ozaChzlsT0B3U8CvEiqC0JjbEoo54JPy37rIjaxu3vsfVmdBOCkcyq5oTJcumtQ4PjQ8rnRrlJlHNrf0RI4uonT6T0CzkJGmdrPMf5a4bYH9urWUxpl4oYyvDxA2/Lm2KpIZZOVxasBB8Tl5rrM5qEv4ei7UCYk9n0NX6n+Pw04pvwNk7X3KUUAw3ehka3L7FgR+r3ZA5Oxy8p+vlvrbbja8vRqpnqcrW+xapJBF6ygQB2YrHtw/BtRti9SOlvHkKp+umBMBCdrhCF/sfJnxGBPBMXGW8Pe2r9x2QWHJSsme4Z8RgSm34igVKUsMWehsbNiCFbWQAlAiw9w7mOXkhuNraC8/nzY1xuMRzIE49iBA8jXp7KkAlwkLu8UlLhXwRgVcG4wVGRMWRHGSP6XiM6MTIEJBFxChpSxPDRsw23MYTol02BHE4Bysu8cvHuN+S+lXIhNh+1hsKMJyM3le93q6fbD4GnCjuE/AAAA//9w7PqIAAAABklEQVQDAAVWHExwkJm4AAAAAElFTkSuQmCC"
+          />
+          <p>Serviço de qualidade</p>
+        </div>
+
+        <div class="
+        qualidade-text"
+        id="atendimento-rpd">
+          <img src="instantaneo.png" alt="" />
+          <p>Atendimento rápido</p>
+        </div>
+        <div class="qualidade-text">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB70lEQVR4AeyWT1LCMBTGUw/gwsE9Mx5EWXsGB7iHM+DaGRceQMAzuEcuot7BA+DvS5tMUhKghaILmfflz+v73pe8lLZn5pd+/8InK/zfLPV6vZ6CT9DUxBlB6udKmN0xpBmkCciSuZYzccQf5QKSwoiK6EjvkB8a4ot42aTKpXGEpDARTtQURTEoimLaBPAHwIn7XPi85YRVYgU5ssZ7g0WKJ4gzVFPHhnCtNIs6ocHccfu1nDbFhjBeXxpWPmXeyuDOIbpd+5z4rKWEXZkNK9XfqTWsQtkMyaUbtpzRemFdAEt8oWkRh8CJqZ+RX73N74WZqRw39F2Zcgs2fyhsHWo4n6OaclZI7ri6VnaUpQdewRu4Lr27W8UCccTt5RjJHVfBT/R34Ba8gH1NseKIqxxJ3jbhi4BxGYx3DcPYMEfE2yb8SOQH+Ab3YF9TrDjiKkeSlxXm7lqBK3AOnpPshFOxQBxxV4kQ6wqF3VNGD44lN8jRYJVqTSis158T1//tmHCyeozasRemPBLVe9deqBr5tKA2ELdKY7txpWEnXtjOjKkHLwgetIExxr2dGFqLcteFbcQpmi6Fox2ymWgeCVNSnaU+W3TWOpND38djBJVLx5UXJshIHOgby9+B8rcBeeZAubShKEW04+hKx5MfAAAA//+Wxo8xAAAABklEQVQDAMpoV0xjxjm8AAAAAElFTkSuQmCC"
+          />
+          <p>Seu carro sempre impecável</p>
+        </div>
+         </main>
+      <footer>
+      
+        <div class="rodape">
+          <div id="img-wd-final">
+            <img src="wd-lavagem-transparente.png" alt=""
+            width="200px" />
+          </div>
+          <div class="inf">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACSUlEQVR4AcyVi3HCMAxAnU7STtJ2ksIkwCTQSaCTwCb0vRwKsTGBlNzRnIVt2daT5A8v6Unf/wUfj8cl8jF1YgYjBrgFuEDWtJfUk5WrYEBCI9JXiF/oJoNXwQD60ANQy6TwCzDQNZSIdNc0zRv9OWKZDH4BxvoMsQj9tNE0zYa6hMc8hsaXDEy0EamWVv6EVOAeuhgeXWdgVsd+0kymNRXfV6+/67VHN0tw30AGJhvl3kfq+2vubmdg0mnEEcl7YSX29MC8du+L8VHdDHxa+XOqs4jRhUM0Hy81cABeSW9EKSkOW6l3bLTUwP10909upsepMiOj4Bdg9k/A98mK0bVXrNQzvq3B0fmu76kHn9cLMAYtkW7bnmbrBNyHpEs5SuEdAJhPrdtjNgbf9ioYgFF3AAx2cGAlfMG4Ee4Za7NDbRmEV8GuAm4kQuzOMG7fqL1Otr3HOui4EMW22XLMtrpq5FfBrkKMOoxnBnBMp7zPQmw7b4P+E7GvHhOpCh8EY0BjGk98GjCtRks3RfTC5sx9QwLmWA3ebcUgOPFhTLh/jdZoknD3tDOisiasFW7qHdZxxXa6CXYWBoQaualXpQFPtA50GXCgL5wLT3k46N+sjrRT7gI7UzgiJOCqdSAyoCPeYQ/iRwWq465p5W5wO5ufE9zU64CZQJt0wMi8w169MtIMmvhGg1njwYkrpUEPlCmMvXRKyApHnRP9rv4TOFZjVAfiVAswE4pXiuHGrYnpWf0QOLNEB5KOKLXomXEuk4LPZm+3ngb+BQAA//+diA+yAAAABklEQVQDALDg8j18EDp6AAAAAElFTkSuQmCC"
+            />
+            <p>+351 XXX-XXX-XXX</p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACUUlEQVR4AdSW3XXCMAyFTSeBSQqTFCYhTAKdBDaBTdL7+USJnB/H5qE95VjIlqV7bdkWfIQ/+vwv4rZt95KjBL19J2lVOxbRVnIXEXLt9BObpGoBVcQd0V563LDda8iLiQXaiC23K+aO8ilqxcRC+5SstRKfiFFDzI5iUOaLlGemh6ka4iFqufdankpnaoi/09DZUYlPDCwm3mw2XK7cjl6dTwRe+yom7oAO0g/JuD1Euhsbc+MqYoGzK8hPDvQkOzZnWu+uEvN+kRGUT7nvB/leJavveZFYwY2kFeFZ8iUpbZBCTinlXszGTYhFZvUYwj4Iez9Y6MiHd2wZ4N2fZWMB9JOohFhOODzlAYBUAIQz3Okc6YfcRz5cPM6bO2D+YE7qeEIsUH5xpGK7CAjCWxwVfimGC0gMC7h0YZB77DAmtp3eBLB4Ph1YVimeBYBh5Px2G/5ArDRzKQzMnG2caIGSUlIJOP1kfjRg9yNTGIg1QzqkYvP9aJj5ojwiM1OJyWP1fZ9qv/LV56NdN0hCMT/wWD1HTywQjAjh/J/ifOi/LTo+LpQdIWWV44l4PXEcheCfgb1BC+xc1pUIKT78L7NYCJN7kxBr1zjwDNAwcCZWhdBkor+dIqDYINiYg9Cqnd1gsKgFlk1wk8sVDY7cr5AFsHpSx04oCBBQbBBszPlqB6HVgoQUomTHGBDIJZwxP3WkfxKI34J4QjBm3WaJzVPkvFOKCelnEQgLQciICeOD/GlUu0VCw84SmxNaiCwCYSFIfE6yoxnXZGV6xpD8hvwAAAD//2F1o3wAAAAGSURBVAMAR67zPQS+he8AAAAASUVORK5CYII="
+            />
+            <p>Cascais, Portugal</p>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACgUlEQVR4AeyWSVLkMBBF7b5Iw0G6Gw7SwXARipMUcBFgzZY9cJLiPVtpSpZcchBEsKFC3xpy+MpUWuVf3Tf9fogXE7/b7Y7ASQuLDmaCg6mGZAPuwQ67F3DfArovCRt0F1uVGEMjk+gKyxPwmvBA38IROuIKP27CMUt5qxKjsgUaSHLa9/1xP8LxQWB3nKCtPswSS3kriNnlRAqZJDrIrQ7P/iD+Cy6AttaGPpl+tIIYkaml6zS0Xw02/R/lO3AL9HNNb3NsP6FGbHo6ovVcJ8UY4NwIoui2zB0PNuj0IJrjqg8VMmKchANTpDwDcit1v+jOUbAArfwNmzVaM3XJ+jNziYWbzaLOiFEOYoZ5S6SSKDCFEogbFrSziiW/gXALnli3SWyfYU6cCWMC6eA4zS24IJBE8tMkO0M3iyytF90qYqxMKV0nUXEMROdaRP6lxL+78fc4dtWnlazgn48W1kZsqvVVPS8FYI0OamNbSxyRno1m1WdE+laVzhbXEnt+mp5TPHHezgew5rnGuuc9rB96rCKmeEyx1asvLw0xbAJS3+24j6/RnRPHEWg7YU4swSScDXTo++uy0Xn/iundhtRNKK8h8z0nDoNilzh9BTr238foTX9sxn8vZWG/3w++sF0mTkKdFVdceFIH+D5f0MdlkjkNXY7BzDgt5LWIo4IjhRp+FvEWGEzmo0ZsCt2hXyFe/lZsZtSaEKkZs+C09Yg8msysICZ9knr32msouZ8wwnEL8X2mrT4KUndQELu4R24VmyYLROisBV1I6Ktl0WnvWoYqsRqSA/+FjN5Ktm8CG5uES1Wu+26ReJCmB548pwf6JpJJs1tF3PTyCYVvI34HAAD//xRzOZ8AAAAGSURBVAMAn3pITE3tv6wAAAAASUVORK5CYII="
+            />
+            <p>@wdlavagem</p>
+          </div>
+        </div>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      <script src="../supabase.js"></script>
+   <script src="script.js"></script>
+  </body>
+</html>

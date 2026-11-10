@@ -1,0 +1,764 @@
+html {
+  color: white;
+  scroll-behavior: smooth;
+  background-color: black;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.wpp {
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 22px;
+  background: #25d366;
+  color: #fff;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0 8px 30px #25d36659;
+  transition: 0.3s ease-in-out;
+}
+.wpp:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px #25d36680;
+}
+/*================
+       CABEÇALHO MOBILE
+  ================*/
+#menu-mobile {
+  display: none;
+}
+
+/*================
+       CABEÇALHO pc
+  ================*/
+#cabecalho {
+  height: 130px;
+  top: 0%;
+  right: 0%;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  gap: 35px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  font-weight: 800;
+  background-color: rgba(0, 0, 0, 0.55);
+}
+
+#cabecalho a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  cursor: pointer;
+}
+
+#cabecalho button {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0rem 8px 20px rgba(0, 0, 0, 0.8);
+  border: none;
+  padding: 10px 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/*================
+       INICIO (1)
+  ================*/
+
+#inicio {
+  justify-content: center;
+  display: flex;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.55) 55%, rgba(0, 0, 0, 1) 100%),
+    url(https://eautomotiva.com.br/wp-content/uploads/2024/01/profissional-com-pincel-lavando-roda-de-carro.jpg);
+  padding: 100px 0px;
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+}
+#inicio p {
+  border-left: 2px solid red;
+  justify-content: center;
+  padding: 10px 10px;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+h1 span {
+  display: block;
+}
+p span {
+  display: block;
+}
+#p2-inicio {
+  font-size: 100%;
+}
+.bt-opcao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.bt-opcao button {
+  padding: 20px 20px;
+  border-radius: 10px;
+  background-color: #cc0000;
+  border: none;
+  color: white;
+  box-shadow: 0rem 8px 20px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background-color 0.2s ease;
+}
+.bt-opcao button:hover {
+  background-color: #cc0000;
+  transform: translateY(-10px);
+  box-shadow: 0rem 8px 20px rgba(0, 0, 0, 0.8);
+}
+.bt-opcao button:active {
+  transform: translateY(0);
+}
+
+/*================
+    QUEM SOMOS? (2)
+  ================*/
+#img-sec2 {
+  flex: 1;
+}
+#img-sec2 img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border: 12px;
+}
+.garantimos {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+.sec2-txt {
+  flex: 1;
+  margin: 0 40;
+  padding: 0;
+}
+#quem-sms-p {
+  font-size: 18px;
+  border-left: 2px solid #cc0000;
+  padding: 10px;
+}
+#h2-sec2 {
+  font-size: 2.5rem;
+}
+#txt-sec2 {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.esperar {
+  margin-top: 32px;
+}
+.esperar h3 {
+  margin-bottom: 12px;
+  border-left: 2px solid #cc0000;
+  padding: 10px;
+}
+.esperar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.esperar li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 12px;
+}
+.esperar li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #39c76a;
+  font-weight: bold;
+}
+#li2,
+#li1 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#li1 {
+  margin-right: 100px;
+  padding-bottom: 20px;
+}
+
+/*================
+    QUEM SOMOS? (3)
+  ================*/
+.serviços h2 {
+  border-left: 2px solid #cc0000;
+  padding: 10px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.serviços-div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.serviço-conteudo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.serviço-conteudo button {
+  padding: 12px 24px;
+  border: 0;
+  border-radius: 8px;
+  background: #cc0000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.serviço-conteudo h3,
+b {
+  font-size: 2rem;
+  margin-bottom: 0px;
+  border-color: 1px solid black;
+  -webkit-text-stroke: 1px white;
+}
+#lavagem {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55) 55%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://i.pinimg.com/736x/4c/9e/b5/4c9eb52e97e1f2b7a84b6f17259435fa.jpg");
+}
+
+#polimento {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55) 55%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://i.pinimg.com/1200x/2c/88/0f/2c880ff0982ac8226945c7ce77e4181f.jpg");
+}
+#higienização {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55) 55%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://i.pinimg.com/1200x/f0/da/5b/f0da5b50f3c9b27b39a972eabe75e95d.jpg");
+}
+#farol {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55) 55%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("https://i.pinimg.com/736x/56/2b/c9/562bc9ea42c60c48703baf4b4e9e062d.jpg");
+}
+#lavagem,
+#polimento,
+#higienização,
+#farol {
+  width: 350px;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  border: 2px solid #cc0000;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+}
+/*================
+    BENEFICIOS (4)
+  ================*/
+.benf h2 {
+  border-left: 2px solid #cc0000;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: 80px;
+}
+.benf-div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+.square-beneficio {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 0px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.6);
+}
+#sq-1,
+#sq-2,
+#sq-3,
+#sq-4,
+#sq-5,
+#sq-6 {
+  width: 600px;
+  height: 250px;
+
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #cc0000;
+  border-radius: 15px;
+  background-position: center;
+  background-size: cover;
+}
+#sq-1 p,
+#sq-2 p,
+#sq-3 p,
+#sq-4 p,
+#sq-5 p,
+#sq-6 p {
+  padding: 0px 80px;
+  font-size: 16px;
+}
+/*================
+   MARCAÇÃO (5)
+  ================*/
+.marcacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+
+  margin-top: 50px;
+}
+.marcacao b {
+  padding: 20px 40px;
+  margin-top: 40px;
+}
+.div2 {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.55) 55%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("https://i.pinimg.com/1200x/4d/32/ec/4d32ecb5f29d051c94bdd033eb84272b.jpg");
+  height: 900px;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid #cc0000;
+  border-radius: 15px;
+}
+.div2 h3 {
+  font-size: 32px;
+  padding: 10px 50px;
+}
+#marc-1 p {
+  font-size: 18px;
+  padding: 20px 80px;
+  color: rgb(228, 220, 220);
+}
+#marc-1 button {
+  background: aliceblue;
+  padding: 10px 40px;
+  margin-left: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.marc-icon img {
+  background-color: #fff;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+#marc-tel p,
+#horario p,
+#address p {
+  font-size: 25px;
+  padding: 0px 20px;
+  color: rgb(228, 220, 220);
+}
+/* Ajustes para diferentes tamanhos de ecrã */
+@media (max-width: 1100px) {
+  #cabecalho {
+    box-sizing: border-box;
+    left: 0;
+    right: 0;
+    width: 100%;
+    gap: 18px;
+    padding: 10px 16px;
+  }
+
+  .serviços-div {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 350px));
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .benf-div {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .benf-top,
+  .benf-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  #sq-1,
+  #sq-2,
+  #sq-3,
+  #sq-4,
+  #sq-5,
+  #sq-6 {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .marc-icon {
+    margin-right: 0;
+  }
+}
+
+/* Telemóveis, incluindo iPhone */
+@media (max-width: 650px) {
+  #menu-mobile {
+    height: 130px;
+    margin-top: 50px;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    gap: 35px;
+    padding: 0px 20px;
+    font-weight: 800;
+    background-color: rgba(0, 0, 0, 0.55);
+  }
+  .icn-cbc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  #menu-mobile a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+  }
+  #menu-mobile button {
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0rem 8px 20px rgba(0, 0, 0, 0.8);
+    border: none;
+    padding: 10px 2pc;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  #cabecalho {
+    display: none;
+  }
+
+  #cabecalho > img {
+    display: none;
+  }
+
+  #cabecalho a {
+    display: none;
+  }
+
+  #cabecalho button {
+    display: none;
+  }
+
+  #inicio {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    padding: 70px 20px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #inicio p,
+  h1 {
+    margin-left: 0;
+  }
+
+  #inicio p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  h1 {
+    font-size: clamp(2.2rem, 11vw, 3.5rem);
+    overflow-wrap: anywhere;
+  }
+
+  #p2-inicio span {
+    display: inline;
+  }
+
+  .bt-opcao {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    margin-top: 18px;
+  }
+
+  .bt-opcao a,
+  .bt-opcao button {
+    width: 100%;
+  }
+
+  .garantimos {
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    padding: 48px 20px;
+  }
+
+  #img-sec2,
+  .sec2-txt {
+    width: 100%;
+    min-width: 0;
+  }
+
+  #img-sec2 img {
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+
+  #h2-sec2 {
+    font-size: 2rem;
+  }
+
+  #li1,
+  #li2 {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .esperar ul {
+    display: block;
+  }
+
+  .esperar li {
+    margin-bottom: 14px;
+  }
+
+  .serviços {
+    width: 100%;
+    padding: 35px 16px;
+  }
+
+  .serviços h2 {
+    margin-left: 4px;
+  }
+
+  .serviços-div {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 18px;
+  }
+
+  #lavagem,
+  #polimento,
+  #higienização,
+  #farol {
+    box-sizing: border-box;
+    width: 100%;
+    height: 420px;
+  }
+
+  .serviço-conteudo h3,
+  .serviço-conteudo b {
+    font-size: 1.5rem;
+  }
+
+  .benf {
+    width: 100%;
+  }
+
+  .benf h2 {
+    margin: 45px 16px 20px;
+  }
+
+  .benf-div {
+    padding: 0 16px;
+  }
+
+  .benf-top,
+  .benf-bottom {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+  }
+
+  #sq-1,
+  #sq-2,
+  #sq-3,
+  #sq-4,
+  #sq-5,
+  #sq-6 {
+    min-height: 230px;
+    height: auto;
+    padding: 20px 10px;
+  }
+
+  #sq-1 p,
+  #sq-2 p,
+  #sq-3 p,
+  #sq-4 p,
+  #sq-5 p,
+  #sq-6 p {
+    padding: 0 16px;
+  }
+
+  .marcacao {
+    display: block;
+    margin-top: 30px;
+    padding: 0 16px;
+  }
+
+  .div2 {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 24px 18px;
+    margin-bottom: 45px;
+  }
+
+  .div2 h3 {
+    font-size: 1.7rem;
+    padding: 0;
+  }
+
+  #marc-1 p {
+    padding: 14px 0;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  #marc-1 button {
+    margin-left: 0;
+  }
+
+  #marc-tel p,
+  #horario p,
+  #address p {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .wpp {
+    right: 14px;
+    bottom: 14px;
+    padding: 12px 16px;
+  }
+}
+
+/* Ecrãs grandes e televisões */
+@media (min-width: 1600px) {
+  #inicio {
+    box-sizing: border-box;
+    min-height: 800px;
+    height: auto;
+    padding-left: max(10vw, calc((100vw - 1500px) / 2));
+    background-size: cover;
+  }
+
+  .garantimos,
+  .serviços,
+  .benf {
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .serviços-div {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  #lavagem,
+  #polimento,
+  #higienização,
+  #farol {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  #sq-1,
+  #sq-2,
+  #sq-3,
+  #sq-4,
+  #sq-5,
+  #sq-6 {
+    box-sizing: border-box;
+    width: 100%;
+  }
+}
