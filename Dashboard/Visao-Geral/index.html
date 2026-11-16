@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-login">
+      <form id="login-form">
+        <h2>Entrar no dashboard</h2>
+        <div class="campo">
+          <label for="login-email">Email</label>
+          <input id="login-email" type="email" required />
+        </div>
+        <div class="campo">
+          <label for="login-password">Senha</label>
+          <input id="login-password" type="password" required />
+        </div>
+        <button type="submit" class="btn-entrar">Entrar</button>
+        <p id="login-erro"></p>
+      </form>
+    </div>
+    <main id="conteudo-dashboard" hidden>
+      <aside>
+        <img src="wd-lavagem-transparente.png" alt="" width="200px" />
+        <div class="btn-aside">
+          <a href="index.html">
+            <button>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABHUlEQVR4AeyU7RGCMAyGqZPoJjIKkziKo8goboLPm2v5aAuEO7zzh17StKF9nzYUL82Xf78DGIbhir+iX70Hd50AUQk+Eb1HF0g5htu2C8jE38jJJe6CbAJy8RDCDUCLuyGrgBXxJoQgcTekClgTZ+dmRyAFYE/cCDReyALgFUffzAMZAZm4aq0XakJbzQyiacXtGgE8feC654RjFiFpkSD6Zmw8B1ji7GYEsIsODzmA0t1xfVSEhSlXnFgauK6xSY0AG9UbHbcQYqpyKivddfMAVFO9dDY2WZQUJHbrwQOor3Rm/4DdQtVKpH/LJl3IpJDGKeb5OLa1sW+hBuh4Ukwkt2c9E7SWMFkB4CL2+A0/ai0LBJnU6RUAcqfaBwAA//+kbnGsAAAABklEQVQDABF4qDEzJVSnAAAAAElFTkSuQmCC"
+              />Visão Geral
+            </button>
+          </a>
+        </div>
+        <div class="btn-aside">
+          <a href="../Marcacoes/index.html">
+            <button>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA0klEQVR4AcRSgQ3CMAwDLoFPxmWIS3hln8Anw+6WKY0yVY22pYqXtklqp93tcvDIJZiWsdXkEp624tw/twMoGoAvUIwKiLJwPowRKsTagXsC28ELgTsQNdZ+dLElqNh1YsecJGu6JVgDe01cgmtweKJcAi8xupdLIL+fqG+tJU/73A7krUVRay152ud20LpzG9fKZZ7bQevObVxUa5/bgVYSndsORh4kj9frWQuUM+CLWYI3dqsErHvsh2SeATdbRYBHG4EnELUHCiuBFcHMue/3DwAA//9nQZJDAAAABklEQVQDAAw2tjE/E0TwAAAAAElFTkSuQmCC"
+              />Marcações
+            </button>
+          </a>
+        </div>
+        <div class="btn-aside">
+          <button>
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA0klEQVR4AcRSgQ3CMAwDLoFPxmWIS3hln8Anw+6WKY0yVY22pYqXtklqp93tcvDIJZiWsdXkEp624tw/twMoGoAvUIwKiLJwPowRKsTagXsC28ELgTsQNdZ+dLElqNh1YsecJGu6JVgDe01cgmtweKJcAi8xupdLIL+fqG+tJU/73A7krUVRay152ud20LpzG9fKZZ7bQevObVxUa5/bgVYSndsORh4kj9frWQuUM+CLWYI3dqsErHvsh2SeATdbRYBHG4EnELUHCiuBFcHMue/3DwAA//9nQZJDAAAABklEQVQDAAw2tjE/E0TwAAAAAElFTkSuQmCC"
+            />Calendário
+          </button>
+        </div>
+        <div class="btn-aside">
+          <button>
+            <img src="chave-inglesa.png" alt="" width="30px" />Serviços
+          </button>
+        </div>
+        <div class="btn-aside">
+          <button>
+            <img src="configuracoes-cog.png" alt="" width="30px" />Definições
+          </button>
+        </div>
+      </aside>
+      <header>
+        <h1>Dashboard</h1>
+        <p>Acompanhe a atividade da sua lavagem</p>
+      </header>
+      <div id="resumos">
+        <div class="square-inf">
+          <div class="div-img-square-inf">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABdElEQVR4AexWbVKDMBTcMP5wHA9Bb2JvUk8inqS9id7EHkIdfzjF3RCQDAnJFGj50Qw7CS8vu/l4eVDgSmW9wvU9yvoBlQXbsQ3K9WvHp1d8hxLAi0XTZjPwNH1pPzc0Lewc564Gwm7L9tzaWsAJb50o27KFEPH7oO9enB2HawyEUVihneufWumYdo7T4/KE60c8AZAzZi6l4+5oPeHOeoHGCoULbM03zBTwbLexzVvhimNTncmetWJFpEUvZdp33oL+HQ3ZYvNMCovMJgcmDzRpEbm2mKjsSWE5LYG08C+ONjoV5Z94h0quTb4RJIXND46GggJcybU592CVFNYonanFLbi0HWcivdW5gRTyG5lUUjg3kEJ+I7q8KGO9C/YlV7yUti+sc2qVmCL5v2T/u86tbapt+frctHnCOifaXom5n4Pj7ng9YVn54a840w0MnvmuSUzDCRtyiot0/89AWF2anfnCgQOqyWDKRaAEhQN+s5v+AAAA//9h4mCXAAAABklEQVQDADKqCEyPHARBAAAAAElFTkSuQmCC"
+            />
+          </div>
+          <p>Marcações Hoje</p>
+          <p id="total-hoje">0</p>
+        </div>
+        <div class="square-inf">
+          <div class="div-img-square-inf">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABVElEQVR4AeyW3XGDMBCEV0we8lcEqSS4k6QTU4lLCZ2YIjJJHjIot1LOQQLHsi3kF+/MWhjEfdxJ3FDhQrqCYR/RON+ixoIKSk0gBrw536AcGAUVZFyQiyu4WLWLlNo+4AWRFgfbO3k9LTb2HmuMdBbYSpOZy0bjO6hBA8rimYP6ZLBrNhW28NlsNaCOEbQzn1jpNY4ngR2UHY4RvGsp5Q5+CMpbjgbPQHsGEjt4ClTmHtdAJtBKyjeILTp41fhb00l5/RT/m5zxHNS8ozNf6GWdX8UKB4/jNUWkJPA+qMbawYFWzrWHoDInsdQDGqikvMxU/+pIuPnAmkaCkjL+DdbKY67moAmcyZQkMO8iPBeU8ZLBnJzT+8EWNTdVNkt7HT/4f+CN+/Zih8rh6BsuBH+jRyEFYL4SkuUTd29uxxszADNZwjkptxl77Al4fHHJ44uBfwAAAP//ORpYhAAAAAZJREFUAwC/JNQ9cQuXlAAAAABJRU5ErkJggg=="
+            />
+          </div>
+          <p>Esta Semana</p>
+          <p id="total-semana">0</p>
+        </div>
+        <div class="square-inf">
+          <div class="div-img-square-inf">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB+ElEQVR4AexW23HCMBBc8ZVXEVBJoJJAJbYrgU4glZgi8vrIoOxKyBZE2HISkskMNz7rdbo9ndaSR/gjuQD/WuL/V6rtFcb2BqW9xpqlpdbUpb3FXGM5aRu0YjkVGEao6byAwRRexizmsFhyTMGUbHc+2cD2DlM6rSMwULbUirqCxQZeFEShABWo7/r8zgJ2DnZYR9NX5gWGOqGW1IV5xQw7TGijYFgA5g1NHUeSBQyDZTNvhJmAmnZUcUA7zGDgA4nGjqu9wC7FBmEvK/OEkFKkRODmGSv0SBLY7Y8YS2X62hRb3Mdjrq697wFJDSeBoRUGjWeFvriMxwfU08AWG0iBLYKondJ3tDbIlySwGCrlyvWpeG8WjjDqP9AO5vqJ6XcSOG36s71JYEcaEcuiaOD4SYX+g/Is5AJ0CsFJTKi47gaHv5IrRkyiPoKdg1wiEc/nRbMeg0f1Hei5yOVOKmXAoz/w+uu9eXJs0qn2IO2bn9K+oT0vTjnWZSLi0VY2NcuTTxawzl8enRN6CYeFc8wA/A+AfgpuyAzd0wb+XLcItkhJFrAm7sFnrIdDRauXztnXfnZs8KnEA5Ynn2xgeRA4r8SShPMBtHuv1elGqpQZZ6MJHToIOPgR4eRcq2IZfggWrJcKLth1lV8C7nKYO3YBzs3Ut+0+AAAA///k5ZbSAAAABklEQVQDAF0+1T0F1wnAAAAAAElFTkSuQmCC"
+            />
+          </div>
+          <p>Receita estimada</p>
+          <p id="total-receita">0€</p>
+        </div>
+        <div class="square-inf">
+          <div class="div-img-square-inf">
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABAElEQVR4AeyU2xGCMBBFb/zyVYSlSCdaCXRCKVIKRTijX667GBgVEjYY9MPcITyGzR5yye4CP1ICf834ZHWyejYHZttctEZBW+zh0CxghpbMy3FD6YJHB1voASOKCn6D1ljgaM6oMKBo4BCofEcUcChUBaYNvP9rChQs74pphROIdyaXBsf2jqlQSeQE0xI7GB5olDOkaO7siZ+lZFo3vBvJTnm5OMHmiprrMANQ46EO/ilU0jnB8nIQLvYDk1cKKy9YYnpwg7YNBtuLJ42CJbYHF/s9zUHmjA0VWJJ0cELl60hQSg2WfAI3F2SuNigx2hEE1ibVxCWwxqUoMf9n9R0AAP//juItFwAAAAZJREFUAwB2wmA9V4jxtgAAAABJRU5ErkJggg=="
+            />
+          </div>
+          <p>Serviços concluidos</p>
+          <p id="total-concluidos">0</p>
+        </div>
+      </div>
+      <div class="graficos">
+        <div id="div-grafico-marc">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAoElEQVR4AeySwQ2AIAxFP97UqZxEN9HN3EpvItXggQQDbZRoyoEPDe2nL61QaKnxa+D/hdrWmG0DSxpD+I2ObYvBdTKRxjpJjed1vKF3hUecCsnKM5Y4BbliYxogh/92kALP4yo2PqowNjVmQOOlRFFzhyb1G1Hj1ALcd2rMJZedp6izkXETFPVFzqzozAJD6oN05sZ8Da+K2pN4XIuh3gEAAP//EWhRVQAAAAZJREFUAwCW4SY9Hd+gtAAAAABJRU5ErkJggg=="
+          />
+          <b>Marcações ao longo da Semana</b>
+          <canvas id="grafico-marcacoes"></canvas>
+        </div>
+        <div id="div-grafico-serv">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAB1klEQVR4AcyWW1rCMBCFT9AHb3sQdgIrEVYCXYl1JeBKZBGKPmjjmZakCS3kQr3Ml/may8z87SQZGOGP5P+C9Q1WyXqLOQJy8ot1E2DJGGmq8bj3pWt/OwmGxhi5EvC1YH2HKVOqXSVzSc1tSzcW+y/CMMEsGBWm+FkZu4wW7EMLDgumesNnXtMQ3yYOutILVjusRKHwjFyhr8QQ7QvRC+4zHHrud8EKW+ylBY8gewIRfYX8a4Q4acGu/SUGA3uF5Av241rwJ2waeOwfMJQcKSQWrD6wda7PkHfaFKGyZqARC66HF5B7J92xVBp27qm57V5fY22dR3iyfXY8sHqF7IGFAwj+yuC4zKHQZE5js48NIx64nqxQAjBwds9upXrH7DBKByz7UFebChMa55ZNOagFRpgx1oJxOq0DNhb2BTQWYKrMfPBJW8Im1NVhel3fo2BjJC9AcBxcoD1pNbHcZxAsxhbe7L2kUaZdlbmiby9dI7cfBRYHgdfp22ECBXffCs7XqRW7WI0GewGdYs8DJFfQW44Z5IFjIgdsksBSiVjRNGt5W5EqrGVO1gIsbzkJ7HmeOUgDN/VWqlpXm7Xo10kCqzeUPMH1/7HOk2tIkCRwQtyg6TcAAAD//1RdMB8AAAAGSURBVAMAAx2xPRWfJ0sAAAAASUVORK5CYII="
+          />
+          <b>Serviços mais pedidos</b>
+          <canvas id="grafico-servicos"></canvas>
+        </div>
+      </div>
+      <div class="marcacoes">
+        <div id="marc-text">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABdElEQVR4AexWbVKDMBTcMP5wHA9Bb2JvUk8inqS9id7EHkIdfzjF3RCQDAnJFGj50Qw7CS8vu/l4eVDgSmW9wvU9yvoBlQXbsQ3K9WvHp1d8hxLAi0XTZjPwNH1pPzc0Lewc564Gwm7L9tzaWsAJb50o27KFEPH7oO9enB2HawyEUVihneufWumYdo7T4/KE60c8AZAzZi6l4+5oPeHOeoHGCoULbM03zBTwbLexzVvhimNTncmetWJFpEUvZdp33oL+HQ3ZYvNMCovMJgcmDzRpEbm2mKjsSWE5LYG08C+ONjoV5Z94h0quTb4RJIXND46GggJcybU592CVFNYonanFLbi0HWcivdW5gRTyG5lUUjg3kEJ+I7q8KGO9C/YlV7yUti+sc2qVmCL5v2T/u86tbapt+frctHnCOifaXom5n4Pj7ng9YVn54a840w0MnvmuSUzDCRtyiot0/89AWF2anfnCgQOqyWDKRaAEhQN+s5v+AAAA//9h4mCXAAAABklEQVQDADKqCEyPHARBAAAAAElFTkSuQmCC"
+          />
+          <b>Próximas marcações</b>
+        </div>
+
+        <button>
+          Ver todas<img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABDklEQVR4AezVXW6CQBSG4XdIL9qmi2ApspN2JU1XQrsS2YksooneyPEM+BcTDsOZqDd84SREZZ74OUjBk7LADyt+qXpW1fJKiTPuqnu0YCPvbDy2GyZQH8HSg/th4QuhYchs3A2HHa3CbtwNo8nBs2C18eImHHeufLCaGl4oKfgDWoZM/uYmrIt90rFOGqFW8/q+NnEb1pWyDuHUALex4Y5f/dZV8lyqBqEJWypGYsJx44R/mpRhzzcwVD2BojFhfT/pkDfWBFbEJKDxY9mwB82GvWgWrA+Gem69ETyNv+qOH12kRTB3LyNxw3HH6x9LZd0yI2b/shuOV/d4PHFMFuzwzpcs8LmKe588reoDAAAA//9p+YqAAAAABklEQVQDAHyfiT3T7eSUAAAAAElFTkSuQmCC"
+          />
+        </button>
+      </div>
+      <div id="lista-proximas"></div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../../supabase.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

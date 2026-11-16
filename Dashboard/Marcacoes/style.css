@@ -1,0 +1,67 @@
+/*================
+       ASIDE
+  ================*/
+aside {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+aside button {
+  background: transparent;
+  border: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+aside button:hover {
+  background: red;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+aside a {
+  text-decoration: none;
+}
+/*================
+       HEADER
+  ================*/
+.header {
+  margin-top: 70px;
+}
+header {
+  position: relative;
+  border-bottom: none;
+}
+header::after {
+  content: "";
+  position: absolute;
+  left: 300px;
+  right: 100px;
+  bottom: 0;
+  height: 1.5px;
+  background-color: gray;
+  box-shadow: 0rem 8px 20px black;
+  top: 100px;
+}
+header h1 {
+  margin-left: 300px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+header p {
+  margin-left: 300px;
+  margin-top: 0;
+  font-size: 20px;
+}

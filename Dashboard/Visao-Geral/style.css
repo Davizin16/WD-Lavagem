@@ -1,0 +1,321 @@
+/*================
+       ASIDE
+  ================*/
+aside {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  padding: 30px;
+  box-sizing: border-box;
+}
+aside button {
+  background: transparent;
+  border: none;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+}
+aside button:hover {
+  background: red;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+aside a {
+  text-decoration: none;
+}
+/*================
+       FORM
+  ================*/
+
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: red;
+  text-shadow:
+    0 2px 4px rgba(15, 15, 15, 0.6),
+    0 0 20px rgba(255, 0, 0, 0.5);
+}
+.form-login {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.campo {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+}
+.campo label {
+  font-size: 18px;
+}
+
+.campo input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: rgba(240, 255, 255, 0.438);
+}
+#login-form {
+  height: 700px;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  max-width: 850px;
+  padding: 25px;
+  border: 2px solid black;
+  border-radius: 15px;
+}
+.btn-entrar {
+  width: 100%;
+  padding: 12px;
+  font-size: 22px;
+  margin-top: 80px;
+  border-radius: 20px;
+  background-color: white;
+}
+/*================
+       HEADER
+  ================*/
+header {
+  position: relative;
+  border-bottom: none;
+}
+header::after {
+  content: "";
+  position: absolute;
+  left: 300px;
+  right: 100px;
+  bottom: 0;
+  height: 1.5px;
+  background-color: gray;
+  box-shadow: 0rem 8px 20px black;
+  top: 100px;
+}
+header h1 {
+  margin-left: 300px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+header p {
+  margin-left: 300px;
+  margin-top: 0;
+  font-size: 20px;
+}
+/*================
+  RESUMO MARCAÇÃO
+  ================*/
+
+#resumos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-left: 300px;
+  box-sizing: border-box;
+  width: calc(100%- 300px);
+}
+.square-inf {
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 16px;
+  background-color: white;
+  box-shadow: 0rem 8px 80px rgba(0, 0, 0, 0.178);
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 130px;
+  width: 250px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.div-img-square-inf {
+  grid-column: 1;
+  grid-row: 1/3;
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(255, 122, 122, 0.712);
+  border-radius: 50%;
+  padding: 0px;
+  margin: 10px;
+}
+.square-inf > p:first-of-type {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.square-inf > p:last-of-type {
+  margin: 4px 40px;
+  font-size: 30px;
+  align-items: center;
+  font-weight: 800;
+}
+#total-receita {
+  font-size: 2rem;
+  margin: 0;
+}
+.graficos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 300px;
+}
+#div-grafico-marc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  min-width: 0;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: white;
+  box-shadow: 0rem 8px 80px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 250px;
+  width: 500px;
+}
+#div-grafico-marc b {
+  margin-top: 7px;
+}
+#div-grafico-serv {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 0;
+  gap: 8px;
+  box-sizing: border-box;
+  padding: 12px;
+  background-color: white;
+  box-shadow: 0rem 8px 80px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+  margin-top: 20px;
+  height: 250px;
+  width: 500px;
+}
+#div-grafico-serv b {
+  margin-top: 7px;
+}
+
+#div-grafico-marc canvas,
+#div-grafico-serv canvas {
+  width: 100% !important;
+  max-height: 145px;
+}
+
+.marcacoes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  background-color: white;
+  box-shadow: 0rem 8px 80px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+}
+#marc-text {
+  margin-left: 300px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+#marc-text b {
+  font-size: 20px;
+}
+.marcacoes button {
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  color: red;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+#lista-proximas {
+  width: 80%;
+  min-width: 0;
+  overflow-x: auto;
+  margin-left: 300px;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0rem 8px 80px rgba(0, 0, 0, 0.178);
+  border-radius: 10px;
+}
+.tabela-marcacoes {
+  width: 80%;
+  border-spacing: 100px 15px;
+  color: black;
+}
+
+.tabela-marcacoes th {
+  background-color: rgba(187, 186, 186, 0.452);
+  padding: 10px 40px;
+  border-radius: 20px;
+}
+.icone-info {
+  width: 20px;
+  height: 20px;
+  color: white;
+  flex-shrink: 0;
+}
+
+.dado-com-icone {
+  display: inline-flex;
+  align-items: center;
+  gap: 20px;
+}
+.estado-acoes {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-concluir {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #55c878;
+  border-radius: 50%;
+  color: #55c878;
+  background: transparent;
+  cursor: pointer;
+}
+
+.estado-Pendente {
+  color: #ffda6a;
+  background-color: #493a10;
+  border-radius: 15px;
+  padding: 10px;
+}
+
+.estado-cancelado {
+  color: #ff9999;
+  background-color: #451d1d;
+  border-radius: 15px;
+  padding: 10px;
+}

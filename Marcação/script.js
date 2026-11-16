@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", async function () {
       data_escolhida: diaSelecionado,
     });
 
-    console.log("marcaç~pes encontradas:", data);
+    console.log("marcaçopes encontradas:", data);
     console.log("Erro:", error);
     if (error) {
       console.error("Erro ao consultar horários:", error);
@@ -158,7 +158,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // PREPARAR DADOS
     const dadosMarcacao = {
-      nome_cliente: nome,
+      "nome-cliente": nome,
       telefone: telefone,
       "dia-marcado": dia,
       "hora-marcada": hora.replace("Hora:", "").trim(),
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     // GUARDAR NO SUPABASE
     const { error } = await supabaseClient
-      .from("agendamentos")
+      .from("marcacoes")
       .insert([dadosMarcacao]);
 
     if (error) {
