@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+   
     <header>
       <!-- ==========================
                     CABEÇALHO
@@ -54,6 +55,15 @@
             placeholder="Numero de telemóvel" id="telefone"
             required>
           </div>
+          <div class="email-div"">
+            <label for="email-cliente">E-mail</label>
+            <input type="email"
+            id="email-cliente"
+            placeholder="Seu e-mail"
+            autocomplete="email"
+            required>
+          </div>
+   
         
         <div class="serviços">
           <div class="titulo-marc">
@@ -68,7 +78,7 @@
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAABx0lEQVR4AeyWb3LCIBTEoSfxKHoS9STGk6gnqTexN0n39wwMEJgpaWP7oZ23CRB2lz8P6pv7pb9/45ct/N9c6nEcB+Eh9Aacg0ib1hI2ZyzSRaST0CTrWyvgwD+0OlSNZQoxkO4inzvxof7EadKinKFqrB7B1Hnvd977oQfi74RgHrXUFqNlzBLTKZApfxkaJDwAZ8+jxMy4WJpbSeioB+6m0DSJmbFa49Jo5IPqi0Lcq4hh1lFTbRY147DMTiPlOC2GOTwfe2mRsM+antGYD8K72tJgEN9BMON9kT5v04/GqrEcW73XCrSB6afG1rDyozrj1JNL46gGLo6QIKp2BVw0qvzWjG9kpUBWh2PR43qGK5DZmM+4LWNmPOvc0ZDOMi1HiZax3bHKQhKuevNEhXoB/lZ89pR/FrNeLWMMH+oNCbKKXQGHo4lGzORUITWuLkna+SfLqTH7urY5yWbjj8bKQEw5AvZhetDGgJYA7iRjr+PkYZVobDXnys4cq50I3XDOlccw0y6N1f81saZxNkNNJ6tnxlpS9pKfLew1e8LNJU5/SItE4tZCi61qGyMvwl3gNxZEmhZDOlcBLSaU6WQzzr6sXPkEAAD//y5hkgwAAAAGSURBVAMA6u39PVfgWiAAAAAASUVORK5CYII="
               />
               <b>Lavagem completa</b>
-              <strong>30€</strong>
+              <strong>DESDE <br>30€</strong>
             </button>
           </div>
           <div class="escolhas">
@@ -139,10 +149,15 @@
             <img src="https://i.pinimg.com/1200x/d9/94/00/d99400d1f43ff617dc0e1cb31efb7329.jpg" alt=""
             width="100px">
             <p>Lavagem completa</p>
-            
+            <label for="">Qual o tipo do carro?</label>
+           <select name="lavagem" id="lavagem-select">
+            <option value="suv">Suv</option>
+            <option value="carrinha">Carrinha</option>
+            <option value="sedan">Sedan</option>
+           </select>
             <button type="button" class="remove-serv">Remover Serviço</button>
 
-            <b>30€</b>
+            <b id="preco-lavagem"> DESDE 30€</b>
           </div>
           <div id="resumo-farol">
             <img src="https://i.pinimg.com/1200x/54/7b/01/547b01c7fa3b54fbd7e204969b96dbc3.jpg" alt=""
@@ -218,7 +233,7 @@
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACSUlEQVR4AcyVi3HCMAxAnU7STtJ2ksIkwCTQSaCTwCb0vRwKsTGBlNzRnIVt2daT5A8v6Unf/wUfj8cl8jF1YgYjBrgFuEDWtJfUk5WrYEBCI9JXiF/oJoNXwQD60ANQy6TwCzDQNZSIdNc0zRv9OWKZDH4BxvoMsQj9tNE0zYa6hMc8hsaXDEy0EamWVv6EVOAeuhgeXWdgVsd+0kymNRXfV6+/67VHN0tw30AGJhvl3kfq+2vubmdg0mnEEcl7YSX29MC8du+L8VHdDHxa+XOqs4jRhUM0Hy81cABeSW9EKSkOW6l3bLTUwP10909upsepMiOj4Bdg9k/A98mK0bVXrNQzvq3B0fmu76kHn9cLMAYtkW7bnmbrBNyHpEs5SuEdAJhPrdtjNgbf9ioYgFF3AAx2cGAlfMG4Ee4Za7NDbRmEV8GuAm4kQuzOMG7fqL1Otr3HOui4EMW22XLMtrpq5FfBrkKMOoxnBnBMp7zPQmw7b4P+E7GvHhOpCh8EY0BjGk98GjCtRks3RfTC5sx9QwLmWA3ebcUgOPFhTLh/jdZoknD3tDOisiasFW7qHdZxxXa6CXYWBoQaualXpQFPtA50GXCgL5wLT3k46N+sjrRT7gI7UzgiJOCqdSAyoCPeYQ/iRwWq465p5W5wO5ufE9zU64CZQJt0wMi8w169MtIMmvhGg1njwYkrpUEPlCmMvXRKyApHnRP9rv4TOFZjVAfiVAswE4pXiuHGrYnpWf0QOLNEB5KOKLXomXEuk4LPZm+3ngb+BQAA//+diA+yAAAABklEQVQDALDg8j18EDp6AAAAAElFTkSuQmCC"
             />
-            <p>+351 XXX-XXX-XXX</p>
+            <p>+351 968 665 146</p>
             <img
               src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAACUUlEQVR4AdSW3XXCMAyFTSeBSQqTFCYhTAKdBDaBTdL7+USJnB/H5qE95VjIlqV7bdkWfIQ/+vwv4rZt95KjBL19J2lVOxbRVnIXEXLt9BObpGoBVcQd0V563LDda8iLiQXaiC23K+aO8ilqxcRC+5SstRKfiFFDzI5iUOaLlGemh6ka4iFqufdankpnaoi/09DZUYlPDCwm3mw2XK7cjl6dTwRe+yom7oAO0g/JuD1Euhsbc+MqYoGzK8hPDvQkOzZnWu+uEvN+kRGUT7nvB/leJavveZFYwY2kFeFZ8iUpbZBCTinlXszGTYhFZvUYwj4Iez9Y6MiHd2wZ4N2fZWMB9JOohFhOODzlAYBUAIQz3Okc6YfcRz5cPM6bO2D+YE7qeEIsUH5xpGK7CAjCWxwVfimGC0gMC7h0YZB77DAmtp3eBLB4Ph1YVimeBYBh5Px2G/5ArDRzKQzMnG2caIGSUlIJOP1kfjRg9yNTGIg1QzqkYvP9aJj5ojwiM1OJyWP1fZ9qv/LV56NdN0hCMT/wWD1HTywQjAjh/J/ifOi/LTo+LpQdIWWV44l4PXEcheCfgb1BC+xc1pUIKT78L7NYCJN7kxBr1zjwDNAwcCZWhdBkor+dIqDYINiYg9Cqnd1gsKgFlk1wk8sVDY7cr5AFsHpSx04oCBBQbBBszPlqB6HVgoQUomTHGBDIJZwxP3WkfxKI34J4QjBm3WaJzVPkvFOKCelnEQgLQciICeOD/GlUu0VCw84SmxNaiCwCYSFIfE6yoxnXZGV6xpD8hvwAAAD//2F1o3wAAAAGSURBVAMAR67zPQS+he8AAAAASUVORK5CYII="
             />

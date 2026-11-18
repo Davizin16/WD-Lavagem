@@ -18,7 +18,22 @@ document.addEventListener("DOMContentLoaded", async function () {
     resumoMarcLavagem.classList.add("resumo-lavagem");
     resumoMarcLavagem.style.display = "flex";
   });
+  const precosPorTipo = {
+    suv: 40,
+    carrinha: 50,
+    sedan: 30,
+  };
 
+  const selectLavagem = document.getElementById("lavagem-select");
+  const precoLavagem = document.getElementById("preco-lavagem");
+
+  function atualizarPrecoLavagem() {
+    const preco = precosPorTipo[selectLavagem.value];
+    precoLavagem.textContent =
+      preco == null ? "Selecione o tipo de carro" : `Preço: ${preco} €`;
+  }
+  selectLavagem.addEventListener("change", atualizarPrecoLavagem);
+  atualizarPrecoLavagem();
   // aparecer resumo do farol
   farol.addEventListener("click", function () {
     const resumoMarcFarol = document.getElementById("resumo-farol");
@@ -123,16 +138,17 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   form.addEventListener("submit", async function (event) {
     event.preventDefault();
-
     const nome = document.getElementById("nome").value.trim();
+    const emailCliente = document
+      .getElementById("email-cliente")
+      .value.trim()
+      .toLowerCase();
     const telefone = document.getElementById("telefone").value.trim();
     const dia = campoData.value;
 
-    const hora = document
-      .querySelector(".hora-selecionada")
-      ?.textContent.trim();
+    const botaoHoraSelecionado = document.querySelector(".hora-selecionada");
+    const hora = botaoHoraSelecionado?.textContent.trim();
 
-    // RECOLHER SERVIÇOS SELECIONADOS
     const servicosSelecionados = [
       ["resumo-lavagem", "Lavagem Completa"],
       ["resumo-farol", "Faróis"],
@@ -150,31 +166,56 @@ document.addEventListener("DOMContentLoaded", async function () {
       }
     });
 
-    // VALIDAR CAMPOS
-    if (!nome || !telefone || !dia || !hora || servicos.length === 0) {
-      alert("Preencha todos os campos e escolha pelo menos um serviço.");
+    const temLavagem = servicos.includes("Lavagem Completa");
+    const tipoCarro = selectLavagem.value;
+
+    if (
+      !nome ||
+      !emailCliente ||
+      !telefone ||
+      !dia ||
+      !hora ||
+      servicos.length === 0
+    ) {
+      alert(
+        "Preencha nome, e-mail, telefone, data, hora e escolha um serviço.",
+      );
       return;
     }
 
-    // PREPARAR DADOS
+    if (temLavagem && !tipoCarro) {
+      alert("Selecione o tipo do carro para a lavagem.");
+      return;
+    }
+
+    const tipoCarroTexto = selectLavagem.selectedOptions[0].textContent
+      .trim()
+      .toUpperCase();
+
+    const servicosParaSalvar = servicos.map((servico) =>
+      servico === "Lavagem Completa"
+        ? `${servico} - ${tipoCarroTexto}`
+        : servico,
+    );
+
     const dadosMarcacao = {
       "nome-cliente": nome,
+      "email-cliente": emailCliente,
       telefone: telefone,
       "dia-marcado": dia,
-      "hora-marcada": hora.replace("Hora:", "").trim(),
-      serviços: servicos.join(", "),
+      "hora-marcada": hora,
+      serviços: servicosParaSalvar.join(", "),
     };
 
     console.log("Dados a enviar:", dadosMarcacao);
 
-    // GUARDAR NO SUPABASE
     const { error } = await supabaseClient
       .from("marcacoes")
       .insert([dadosMarcacao]);
 
     if (error) {
-      console.error("Erro ao guardar agendamento:", error);
-      alert("Não foi possível realizar a marcação. Consulta a consola.");
+      console.error("Erro ao guardar a marcação:", error);
+      alert(`Não foi possível guardar: ${error.message}`);
       return;
     }
 
@@ -182,7 +223,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     form.reset();
 
-    // LIMPAR RESUMOS E HORA SELECIONADA
     servicosSelecionados.forEach(function ([id]) {
       document.getElementById(id).style.display = "none";
     });
@@ -193,5 +233,6 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     textoData.textContent = "Data:";
     textoHora.textContent = "Hora:";
+    atualizarPrecoLavagem();
   });
 });

@@ -375,7 +375,6 @@ b {
   align-items: center;
   justify-content: center;
   gap: 32px;
-
   margin-top: 50px;
 }
 .marcacao b {
@@ -394,7 +393,8 @@ b {
       rgba(0, 0, 0, 0.8) 100%
     ),
     url("https://i.pinimg.com/1200x/4d/32/ec/4d32ecb5f29d051c94bdd033eb84272b.jpg");
-  height: 900px;
+  height: 1200px;
+  width: 1000px;
   background-position: center;
   background-size: cover;
   border: 2px solid #cc0000;
@@ -429,6 +429,18 @@ b {
   font-size: 25px;
   padding: 0px 20px;
   color: rgb(228, 220, 220);
+}
+
+.container {
+  height: 30vh;
+}
+.mapa {
+  margin-left: 20px;
+  width: 300px;
+  height: 200px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 25px #000;
 }
 /* Ajustes para diferentes tamanhos de ecrã */
 @media (max-width: 1100px) {

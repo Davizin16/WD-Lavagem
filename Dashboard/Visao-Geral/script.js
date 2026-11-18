@@ -56,7 +56,7 @@ async function carregarDashboard() {
   mostrarProximasMarcacoes(marcacoes);
 }
 
-function nozmalizar(texto = "") {
+function normalizar(texto = "") {
   return String(texto)
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -68,10 +68,14 @@ function obterServicos(marcacao) {
   const servicos = marcacao["serviços"] ?? marcacao.servicos;
 
   if (Array.isArray(servicos)) return servicos;
-  if (typeof servicos === "string") return [servicos];
+  if (typeof servicos === "string") {
+    return servicos
+      .split(",")
+      .map((servico) => servico.trim())
+      .filter(Boolean);
+  }
   return [];
 }
-
 function obterData(marcacao) {
   return marcacao["dia-marcado"] ?? marcacao.data_servico;
 }
@@ -132,6 +136,9 @@ function atualizarCartoes(marcacoes) {
 
   const precos = {
     "lavagem completa": 30,
+    "lavagem completa - suv": 40,
+    "lavagem completa - carrinha": 50,
+    "lavagem completa - sedan": 30,
     "lavegam completa": 30,
     "revitalizacao de farois": 50,
     farois: 50,
@@ -354,6 +361,15 @@ function mostrarProximasMarcacoes(marcacoes) {
 `;
 
     botaoConcluir.addEventListener("click", async () => {
+      console.log("Marcação clicada:", marcacao);
+
+      if (marcacao.id == null) {
+        alert(
+          "Esta marcação chegou sem ID. Atualize a página e confira o Console.",
+        );
+        return;
+      }
+
       botaoConcluir.disabled = true;
 
       const { error } = await supabaseClient
@@ -363,7 +379,7 @@ function mostrarProximasMarcacoes(marcacoes) {
 
       if (error) {
         console.error("Erro ao concluir o serviço:", error);
-        alert("Não foi possível atualizar o estado.");
+        alert(`Erro ${error.code}: ${error.message}`);
         botaoConcluir.disabled = false;
         return;
       }
